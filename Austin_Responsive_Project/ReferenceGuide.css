@@ -1,0 +1,10 @@
+/************************************************/
+/***       REFERENCE GUIDE STYLE SHEET        ***/
+/************************************************/
+/*
+ * This document contains the styles to support the Reference Guide pages in iMIS 
+ */
+   
+pre.prettyprint{
+    color: rgba(255, 255, 255, 0.85);
+}
