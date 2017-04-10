@@ -1,0 +1,26 @@
+{
+  "name": "gulp-sass-workflow-for-imis",
+  "version": "1.0.0",
+  "description": "Gulp Sass workflow for iMIS",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS/issues"
+  },
+  "homepage": "https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS#readme"
+}
