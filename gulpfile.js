@@ -21,11 +21,7 @@ gulp.task('sass', function () {
 
 gulp.task('skin', function () {
     return gulp.src('./Austin_Responsive_Project/**/*.skin')
-    .pipe(rename(function(path) {
-       path.basename = changeCase.lowerCase(path.basename);
-       path.extname = changeCase.lowerCase(path.extname);
-     }))
-     .pipe(gulp.dest('./Austin_Responsive/css'))
+        .pipe(gulp.dest('./Austin_Responsive/css'))
 });
 
 gulp.task('xml', function () {

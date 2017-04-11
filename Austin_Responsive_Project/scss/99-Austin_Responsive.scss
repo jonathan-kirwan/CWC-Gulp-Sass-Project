@@ -1,3 +1,5 @@
+@import "_variables";
+
 @charset "UTF-8";
 /* Responsive version of the Austin Theme for iMIS */
 @import url("//fonts.googleapis.com/css?family=Raleway:200");
@@ -120,8 +122,8 @@
 
 /* This applies to the area behind the header logo and auxiliary navigation */
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: $common-padding-vertical;
+  padding-bottom: $common-padding-vertical;
 }
 
 @media (min-width: 768px) {
@@ -242,7 +244,7 @@
 }
 
 .obo-label {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 .obo-label span:after {
   content: ':';
@@ -274,38 +276,38 @@
    Basic setup
    ========================================================================== */
 body {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333333;
+  font-family: $font-family-stack;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $gray;
 }
 
 a {
-  color: #23749d ;
+  color: $link-color;
   text-decoration: underline;
 }
 a:visited {
-  color: #2883b2 ;
+  color: $link-visited-color;
 }
 a:hover, a:focus, a:active {
-  color: #1a5573 ;
+  color: $link-hover-color;
 }
 a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabled:active, a.aspNetDisabled:visited {
-  color: #999999 ;
+  color: $gray-lightened;
 }
 
 .RadGrid a, .RadToolTip a {
-  color: #23749d  !important;
+  color: $link-color  !important;
   text-decoration: underline;
 }
 .RadGrid a:visited, .RadToolTip a:visited {
-  color: #2883b2  !important;
+  color: $link-visited-color  !important;
 }
 .RadGrid a:hover, .RadGrid a:focus, .RadGrid a:active, .RadToolTip a:hover, .RadToolTip a:focus, .RadToolTip a:active {
-  color: #1a5573  !important;
+  color: $link-hover-color  !important;
 }
 .RadGrid a.aspNetDisabled, .RadGrid a.aspNetDisabled:hover, .RadGrid a.aspNetDisabled:focus, .RadGrid a.aspNetDisabled:active, .RadGrid a.aspNetDisabled:visited, .RadToolTip a.aspNetDisabled, .RadToolTip a.aspNetDisabled:hover, .RadToolTip a.aspNetDisabled:focus, .RadToolTip a.aspNetDisabled:active, .RadToolTip a.aspNetDisabled:visited {
-  color: #999999  !important;
+  color: $gray-lightened  !important;
 }
 
 .RadGrid a.TextButton {
@@ -320,9 +322,9 @@ p {
 
 h1, .h1, .PageTitle,
 h2, .h2, .PanelTitle {
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 200;
-  color: #424242;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-thin;
+  color: $gray-pretty-dark;
 }
 
 h1, .h1, .PageTitle {
@@ -330,20 +332,20 @@ h1, .h1, .PageTitle {
 }
 
 h1, .h1, .PageTitle {
-  color: #dc4f00;
-  font-size: 250%;
+  color: $primary-color;
+  font-size: $font-size-h1;
 }
 
 h1.BigHeader, .h1.BigHeader {
   color: #fff;
-  background-color: #dc4f00;
+  background-color: $primary-color;
   padding: 20px;
   margin: 0;
 }
 
 h2, .PanelTitle {
   line-height: 1.45em;
-  font-size: 170%;
+  font-size: $font-size-h2;
 }
 
 h2,
@@ -361,11 +363,11 @@ h4, .SectionLabel, h5 {
 }
 
 h4, .h4, .SectionLabel {
-  color: #009b96;
+  color: $section-label-color;
 }
 
 h5, .h5 {
-  color: #009b96;
+  color: $section-label-color;
 }
 
 h6, .h6 {
@@ -376,8 +378,8 @@ hr {
   margin-left: .5em;
   margin-right: .5em;
   border-width: 1px 0 0 0;
-  border-style: dotted;
-  border-color: #ddd;
+  border-style: $border-style;
+  border-color: $border-color;
 }
 
 .StandardPanel,
@@ -388,7 +390,7 @@ h2,
 div.ShowFieldset fieldset,
 .panel-border,
 .panel-heading.Distinguish {
-  border-color: #ddd;
+  border-color: $border-color;
 }
 
 .PanelHead.Distinguish .PanelHeadOptions,
@@ -398,12 +400,12 @@ div.ShowFieldset fieldset,
 
 /* Used for messages guiding users to the next step */
 .HelperText {
-  color: #0064cd;
+  color: $helper-text-color;
 }
 
 /* This gives certain selected items (e.g., in the PeoplePanel in the Event Showcase) a colored background */
 .SelectedItem {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
 }
 
 /**
@@ -436,7 +438,7 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 /* This applies to the loading bar at the top of the page */
 .ProgressDiv {
-  background-color: #ffdd6f;
+  background-color: $progress-color;
 }
 
 #masterHeaderBackground,
@@ -449,8 +451,8 @@ img.ImgNoResize, .ImgNoResize img {
   background: #fff url("images/ResponsiveHeaderSprite.png") no-repeat;
   background-position: 7px -16px;
   padding-left: 28px !important;
-  color: #777;
-  border-color: #CCC;
+  color: $gray-lightened;
+  border-color: $input-border-color;
 }
 
 .header-search .TextButton {
@@ -504,7 +506,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 /* On Behalf Of with target set */
 .ProxyPanelContact {
-  background-color: #009b96;
+  background-color: $section-label-color;
 }
 .ProxyPanelContact, .ProxyPanelContact .obo-label {
   color: #fff;
@@ -521,16 +523,16 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .SubNavPanelHead {
-  background-color: #f4f5ed;
-  color: #333333;
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 200;
+  background-color: $gray-bg;
+  color: $gray;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-thin;
 }
 
 .SubNavigationSeparator {
   border-width: 1px 0 0 0;
-  border-style: dotted;
-  border-color: #ddd;
+  border-style: $border-style;
+  border-color: $border-color;
   height: 1px;
   padding: 0;
   margin: 0;
@@ -633,7 +635,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .footer-content {
-  background-color: #424242;
+  background-color: $gray-pretty-dark;
   color: #fff;
   text-align: center;
 }
@@ -661,15 +663,15 @@ img.ImgNoResize, .ImgNoResize img {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.075), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 .footer-promo-container .lead {
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 200;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-thin;
   margin-bottom: .25em;
   font-size: 130%;
   line-height: inherit;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-promo-container .lead {
-    font-size: 150%;
+    font-size: $feature-text;
   }
 }
 @media (min-width: 992px) {
@@ -707,17 +709,17 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 /* Old-style footer (pre-responsive) */
 #ft {
-  background-color: #424242;
+  background-color: $gray-pretty-dark;
   color: #fff;
 }
 #ft h4 {
   color: #fff;
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 200;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-thin;
 }
 
 #masterFooterConnectWithUs {
-  border-style: dotted;
+  border-style: $border-style;
   border-color: rgba(221, 221, 221, 0.8);
   border-width: 0 1px;
 }
@@ -741,9 +743,9 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 #masterFooterCopyright {
-  border-color: #ddd;
+  border-color: $border-color;
   /* rgba fallback */
-  border-top: 1px solid rgba(221, 221, 221, 0.5);
+  border-top: $border;
 }
 
 /* ==========================================================================
@@ -769,9 +771,9 @@ img.ImgNoResize, .ImgNoResize img {
 
 .auth-link-container {
   /* container for the sign in link when the browser is <768px wide */
-  padding: 10px 15px;
+  padding: $common-padding-vertical $common-padding-horizontal;
   text-align: right;
-  border-bottom: 1px dotted #666666;
+  border-bottom: $border;
 }
 
 /* Reset some Telerik defaults */
@@ -831,7 +833,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmText,
 .RadMenu.RadMenu_Austin .rmHorizontal .rmText,
 .RadMenu.RadMenu_Austin .rmSlide .rmText {
-  padding: 10px 15px;
+  padding: $common-padding-vertical $common-padding-horizontal;
 }
 .RadMenu.RadMenu_Austin .rmSlide .MegaDropDownMenuOuter > .rmText {
   /* when mega menus are on, don't add padding around the rmText */
@@ -906,17 +908,17 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmRootLink.rmSelected {
   /* root item selected styles */
   color: #fff;
-  background-color: #dc4f00;
+  background-color: $primary-color;
 }
 .RadMenu.RadMenu_Austin .rmRootLink.rmExpanded,
 .RadMenu.RadMenu_Austin .rmRootLink:hover,
 .RadMenu.RadMenu_Austin .rmRootLink:focus {
   /* root item hover and focus styles */
-  background-color: #424242;
+  background-color: $gray-pretty-dark;
   color: #fff;
 }
 .RadMenu.RadMenu_Austin .rmGroup {
-  background-color: #424242;
+  background-color: $gray-pretty-dark;
 }
 .RadMenu.RadMenu_Austin .rmDisabled > .rmLink,
 .RadMenu.RadMenu_Austin .rsmDisabled > .rsmLink {
@@ -934,7 +936,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmRootGroup > .rmItem > .rmLink {
   text-transform: uppercase;
   font-size: 100%;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   letter-spacing: 0;
 }
 .RadMenu.RadMenu_Austin .rmToggle, .RadMenu.RadMenu_Austin .rmRootGroup .rmRootLink .rmToggle {
@@ -1036,7 +1038,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:focus {
   text-transform: uppercase;
   color: #8f8f8f;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   letter-spacing: 0;
 }
 .RadMenu_Austin .rmSlide .MegaDropDownMenuSeperator .rsmLink {
@@ -1175,19 +1177,19 @@ img.ImgNoResize, .ImgNoResize img {
   padding: 0;
 }
 .RadTreeView.RadTreeView_Austin .rtIn {
-  font-weight: bold !important;
+  font-weight: $font-weight-bold !important;
   display: block;
 }
 .RadTreeView.RadTreeView_Austin .rtIn,
 .RadTreeView.RadTreeView_Austin .rtHover .rtIn,
 .RadTreeView.RadTreeView_Austin .rtSelected .rtIn {
-  padding: 10px 15px;
+  padding: $common-padding-vertical $common-padding-horizontal;
   border: none;
 }
 .RadTreeView.RadTreeView_Austin .rtSelected > a.rtIn,
 .RadTreeView.RadTreeView_Austin .child-is-selected.rtIn {
   background-color: transparent;
-  color: #333333;
+  color: $gray;
 }
 .RadTreeView.RadTreeView_Austin .rtSelected > a.rtIn:hover, .RadTreeView.RadTreeView_Austin .rtSelected > a.rtIn:active, .RadTreeView.RadTreeView_Austin .rtSelected > a.rtIn:focus {
   background-color: transparent;
@@ -1197,7 +1199,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 .RadTreeView.RadTreeView_Austin > .rtUL > .rtLI {
   /* add a separator border to the first-level sub-nav items only */
-  border-top: 1px dotted #ddd;
+  border-top: $border;
 }
 .RadTreeView.RadTreeView_Austin > .rtUL > .rtLI:first-child {
   border-top: none;
@@ -1222,7 +1224,7 @@ img.ImgNoResize, .ImgNoResize img {
   display: none;
 }
 .RadTreeView.RadTreeView_Austin a.rtIn {
-  color: #23749d;
+  color: $link-color;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -1233,15 +1235,15 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .nav-secondary {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
   margin-bottom: 1em;
 }
 .nav-secondary .sub-nav-head {
-  background-color: #dc4f00;
+  background-color: $primary-color;
   color: #fff;
-  font-weight: bold;
-  font-size: 120%;
-  padding: 10px 15px;
+  font-weight: $font-weight-bold;
+  font-size: $large-body-text;
+  padding: $common-padding-vertical $common-padding-horizontal;
 }
 .nav-secondary .SubNavigationSeparator {
   border: none;
@@ -1286,10 +1288,10 @@ img.ImgNoResize, .ImgNoResize img {
   border-bottom-right-radius: 0;
 }
 .navbar-toggle.collapsed {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
 }
 .navbar-toggle:hover, .navbar-toggle:focus {
-  background-color: #267087;
+  background-color: $secondary-color-hover;
 }
 .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -1382,7 +1384,7 @@ img.ImgNoResize, .ImgNoResize img {
   left: 10px;
   text-align: center;
   line-height: 1;
-  width: 1.6em;
+  width: $body-line-height;
 }
 .nav-auxiliary .nav-aux-cart .cartCenter {
   color: #fff;
@@ -1402,7 +1404,7 @@ img.ImgNoResize, .ImgNoResize img {
 @media (max-width: 767px) {
   .nav-auxiliary .nav-aux-button .NavigationLink {
     /* This makes the link look like the toggle buttons */
-    background-color: #2f8aa7;
+    background-color: $secondary-color;
     margin-left: 15px;
     padding: 9px 10px;
     margin-top: 6.5px;
@@ -1411,7 +1413,7 @@ img.ImgNoResize, .ImgNoResize img {
     border-radius: 0;
   }
   .nav-auxiliary .nav-aux-button .NavigationLink:hover, .nav-auxiliary .nav-aux-button .NavigationLink:focus {
-    background-color: #267087;
+    background-color: $secondary-color-hover;
   }
   .nav-auxiliary .nav-aux-button .NavigationLink:active {
     background-color: #0f323e;
@@ -1445,7 +1447,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .header-search {
-  padding: 10px 15px;
+  padding: $common-padding-vertical $common-padding-horizontal;
 }
 .header-search > .header-search {
   padding: 0;
@@ -1606,7 +1608,7 @@ input,
 button,
 select,
 textarea {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
+  font-family: $font-family-stack;
 }
 
 select,
@@ -1630,9 +1632,9 @@ input[type="color"],
   height: 37px;
   padding: 5px 10px;
   font-size: 100%;
-  line-height: 1.6;
-  color: #555555;
-  border: 1px solid #ccc;
+  line-height: $body-line-height;
+  color: $gray-medium;
+  border: $input-border;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1657,7 +1659,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: #66afe9;
+  border-color: $input-border-color-focus;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -1679,7 +1681,7 @@ input[type="search"]:-moz-placeholder,
 input[type="tel"]:-moz-placeholder,
 input[type="color"]:-moz-placeholder,
 .uneditable-input:-moz-placeholder {
-  color: #999999;
+  color: $gray-lightened;
 }
 select::-moz-placeholder,
 textarea::-moz-placeholder,
@@ -1698,7 +1700,7 @@ input[type="search"]::-moz-placeholder,
 input[type="tel"]::-moz-placeholder,
 input[type="color"]::-moz-placeholder,
 .uneditable-input::-moz-placeholder {
-  color: #999999;
+  color: $gray-lightened;
 }
 select:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
@@ -1717,7 +1719,7 @@ input[type="search"]:-ms-input-placeholder,
 input[type="tel"]:-ms-input-placeholder,
 input[type="color"]:-ms-input-placeholder,
 .uneditable-input:-ms-input-placeholder {
-  color: #999999;
+  color: $gray-lightened;
 }
 select::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
@@ -1736,27 +1738,27 @@ input[type="search"]::-webkit-input-placeholder,
 input[type="tel"]::-webkit-input-placeholder,
 input[type="color"]::-webkit-input-placeholder,
 .uneditable-input::-webkit-input-placeholder {
-  color: #999999;
+  color: $gray-lightened;
 }
 
 /* RadComboBox needs the same styles as normal inputs, 
  * but has to be done separately due to its structure */
 .RadComboBox.RadComboBox_MetroTouch {
-  color: #555555;
+  color: $gray-medium;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
 }
 .RadComboBox.RadComboBox_MetroTouch .rcbInner, .RadComboBox.RadComboBox_MetroTouch .rcbInner .rcbInput, .RadComboBox.RadComboBox_MetroTouch .rcbFocused, .RadComboBox.RadComboBox_MetroTouch .rcbFocused .rcbInput, .RadComboBox.RadComboBox_MetroTouch .rcbHovered, .RadComboBox.RadComboBox_MetroTouch .rcbHovered .rcbInput {
-  color: #555555;
+  color: $gray-medium;
 }
 .RadComboBox.RadComboBox_MetroTouch .rcbInner {
   height: 37px;
   padding: 0;
   font-size: 100%;
-  line-height: 1.6;
-  border: 1px solid #ccc;
+  line-height: $body-line-height;
+  border: $input-border;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1768,7 +1770,7 @@ input[type="color"]::-webkit-input-placeholder,
   padding: 0;
 }
 .RadComboBox.RadComboBox_MetroTouch .rcbFocused {
-  border-color: #66afe9;
+  border-color: $input-border-color-focus;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -1779,7 +1781,7 @@ input[type="color"]::-webkit-input-placeholder,
 }
 .RadComboBox.RadComboBox_MetroTouch .rcbInner .rcbEmptyMessage,
 .RadComboBox.RadComboBox_MetroTouch .rcbHovered .rcbEmptyMessage {
-  color: #999999;
+  color: $gray-lightened;
 }
 .RadComboBox.RadComboBox_MetroTouch .rcbActionButton {
   border-radius: 0 0 0 0;
@@ -1799,12 +1801,12 @@ input[type="color"]::-webkit-input-placeholder,
 .RadInput.RadInput.riSingle .riTextBox {
   height: 37px;
   padding: 5px 10px;
-  border-color: #ccc;
+  border-color: $input-border-color;
   font: inherit;
-  color: #555555;
+  color: $gray-medium;
 }
 .RadInput.RadInput.riSingle .riTextBox:focus {
-  border-color: #66afe9;
+  border-color: $input-border-color-focus;
 }
 
 .RadUpload.RadUpload .ruFakeInput {
@@ -1815,7 +1817,7 @@ input[type="color"]::-webkit-input-placeholder,
 .chosen-container-multi .chosen-choices {
   min-height: 37px;
   border-radius: 0;
-  border-color: #ccc;
+  border-color: $input-border-color;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -1832,7 +1834,7 @@ input[type="color"]::-webkit-input-placeholder,
 }
 
 .chosen-container-active .chosen-choices {
-  border-color: #66afe9;
+  border-color: $input-border-color-focus;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -1864,7 +1866,7 @@ textarea {
 }
 
 select {
-  border: 1px solid #ccc;
+  border: $input-border;
   background-color: #fff;
 }
 
@@ -1894,7 +1896,7 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -1903,8 +1905,8 @@ input[type="checkbox"]:focus {
   white-space: normal;
   text-decoration: none;
   padding: 5px 10px;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
   border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1996,7 +1998,7 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a,
 .RadGrid input.TextButton {
   color: #fff;
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
   border-color: transparent;
 }
 .btn:hover, .btn:focus, .btn:active, .btn:visited,
@@ -2021,7 +2023,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.TextButton:active,
 .RadGrid input.TextButton:visited {
   color: #fff;
-  background-color: #267087;
+  background-color: $secondary-color-hover;
   border-color: transparent;
 }
 .btn:active,
@@ -2093,13 +2095,13 @@ input[type="checkbox"]:focus {
 .RadGrid input.TextButton.aspNetDisabled:hover,
 .RadGrid input.TextButton.aspNetDisabled:focus,
 .RadGrid input.TextButton.aspNetDisabled:active {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
   border-color: transparent;
 }
 
 /* some Telerik overrides */
 .ruButton {
-  background-color: #2f8aa7 !important;
+  background-color: $secondary-color !important;
   color: #fff !important;
   cursor: pointer;
 }
@@ -2108,7 +2110,7 @@ input[type="checkbox"]:focus {
 .RadUpload .ruRemove {
   height: auto !important;
   padding: 5px 10px !important;
-  line-height: 1.6 !important;
+  line-height: $body-line-height !important;
 }
 
 /* primary button */
@@ -2120,7 +2122,7 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a,
 .RadGrid input.PrimaryButton {
   color: #fff;
-  background-color: #dc4f00;
+  background-color: $primary-color;
   border-color: transparent;
 }
 .PrimaryButton:hover, .PrimaryButton:focus, .PrimaryButton:active, .PrimaryButton:visited,
@@ -2234,7 +2236,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.PrimaryButton.aspNetDisabled:hover,
 .RadGrid input.PrimaryButton.aspNetDisabled:focus,
 .RadGrid input.PrimaryButton.aspNetDisabled:active {
-  background-color: #dc4f00;
+  background-color: $primary-color;
   border-color: transparent;
 }
 
@@ -2279,14 +2281,14 @@ input[type="checkbox"]:focus {
 .MediumButton,
 .UseMediumButton .TextButton,
 .UseMediumButton .TextButtonWithImage {
-  font-size: 120% !important;
+  font-size: $large-body-text !important;
   padding: 9px 14px !important;
 }
 
 .LargeButton,
 .UseLargeButton .TextButton,
 .UseLargeButton .TextButtonWithImage {
-  font-size: 150% !important;
+  font-size: $feature-text !important;
   padding: 12px 17px !important;
 }
 
@@ -2297,7 +2299,7 @@ input[type="checkbox"]:focus {
 .CalloutArea2 .TextButton.PrimaryButton,
 .CalloutArea2 .TextButtonWithImage.PrimaryButton {
   color: #fff;
-  background-color: #424242;
+  background-color: $gray-pretty-dark;
 }
 .CalloutArea1 .btn.PrimaryButton:hover, .CalloutArea1 .btn.PrimaryButton:active, .CalloutArea1 .btn.PrimaryButton:focus,
 .CalloutArea1 .TextButton.PrimaryButton:hover,
@@ -2325,7 +2327,7 @@ input[type="checkbox"]:focus {
 /* Open Invoices
    ========================================================================== */
 .OpenInvoicesTotals .SelectedTotal .PanelFieldValue {
-  color: #dc4f00;
+  color: $primary-color;
 }
 
 /* Group List Editor
@@ -2336,17 +2338,17 @@ input[type="checkbox"]:focus {
 .RadTreeView.GLE .rtIn, .RadTreeView.GLE .rtHover .rtIn, .RadTreeView.GLE .rtSelected .rtIn {
   background-color: transparent;
   border: none;
-  color: #23749d;
+  color: $link-color;
 }
 .RadTreeView.GLE a:hover, .RadTreeView.GLE a:focus, .RadTreeView.GLE span[onclick]:hover, .RadTreeView.GLE span[onclick]:focus {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
   color: #fff;
 }
 
 /* Communiaction Preferences
    ========================================================================== */
 .CommunicationPreferencesSection {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 
 /* Search Results
@@ -2359,31 +2361,31 @@ input[type="checkbox"]:focus {
 }
 
 .SearchField label {
-  font-size: 120%;
-  color: #23749d;
+  font-size: $large-body-text;
+  color: $link-color;
 }
 
 .SearchResultSummary .ListItemTitle a {
   text-decoration: none;
-  color: #333333 !important;
+  color: $gray !important;
   margin: -4px -7px 0;
 }
 
 .SearchResultSummary .ListItemTitle a:hover {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
   text-decoration: underline;
 }
 
 /* Event Display
    ========================================================================== */
 .EventSummary {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 .EventSummary .PhotoArea {
   padding: 2em;
 }
 .EventSummary .PhotoArea img {
-  border: 1px solid #CCC !important;
+  border: $input-border !important;
 }
 .EventSummary .Description {
   padding: 0 2em 2em;
@@ -2399,13 +2401,13 @@ input[type="checkbox"]:focus {
 
 .ProgramGroup .PanelHead,
 .ProgramGroup .panel-heading {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
 }
 .ProgramGroup .PanelTitle,
 .ProgramGroup .panel-title {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 120%;
+  font-family: $font-family-stack;
+  font-weight: $font-weight-bold;
+  font-size: $large-body-text;
   line-height: 2em;
   padding-left: .5em;
 }
@@ -2413,7 +2415,7 @@ input[type="checkbox"]:focus {
 /* Product Display
    ========================================================================== */
 .ProductDisplay {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
   padding: 1em;
 }
 
@@ -2422,17 +2424,17 @@ input[type="checkbox"]:focus {
 /* These are overrides for the colors and styles defined in 10-UltraWave.css */
 /* <Progress Tracker (Default)> */
 .ProgressTracker .count {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 .ProgressTracker .SuccessfulMessage,
 .ProgressTracker .ProgressBar > span {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 
 /* </Progress Tracker > */
 /* <Progress Tracker 2> */
 .ProgressTracker2 .ProgressTrackerPanel {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
 }
 .ProgressTracker2 .ProgressTrackerPanel:before, .ProgressTracker2 .ProgressTrackerPanel:after {
   content: " ";
@@ -2443,23 +2445,23 @@ input[type="checkbox"]:focus {
 }
 .ProgressTracker2 .ProgressTrackerPanel .count {
   color: #fff;
-  font-family: Raleway, Verdana, sans-serif;
-  font-weight: 200;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-thin;
 }
 .ProgressTracker2 div p {
   background-color: #fff;
-  color: #23749d;
+  color: $link-color;
   margin-bottom: 0;
 }
 .ProgressTracker2 .ProgressBar {
   margin: 10px;
 }
 .ProgressTracker2 .ProgressBar > span {
-  background-color: #db9770;
+  background-color: $progress-bar;
 }
 .ProgressTracker2 .SuccessfulMessage {
   background-color: #6db0d3;
-  color: #333333;
+  color: $gray;
 }
 
 /* </Progress Tracker 2> */
@@ -2467,7 +2469,7 @@ input[type="checkbox"]:focus {
    ========================================================================== */
 /* This is an alternate style for the Query Menu filter panel */
 .FilterPanel {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
   border: none !important;
   margin-top: -3px;
 }
@@ -2488,11 +2490,11 @@ input[type="checkbox"]:focus {
 /* Cart Charges
    ========================================================================== */
 .CartCharges {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 .CartCharges .PanelField {
   border-bottom: none;
-  border-top: 1px dotted #ddd;
+  border-top: $border;
 }
 .CartCharges .PanelField:first-child,
 .CartCharges .PanelField .GrandTotal {
@@ -2501,11 +2503,11 @@ input[type="checkbox"]:focus {
 .CartCharges .GrandTotal .PanelField {
   background-color: #fff;
   text-transform: uppercase;
-  font-weight: bold;
-  color: #dc4f00;
+  font-weight: $font-weight-bold;
+  color: $primary-color;
 }
 .CartCharges .GrandTotal .PanelField .Label {
-  color: #dc4f00;
+  color: $primary-color;
 }
 
 /* ==========================================================================
@@ -2516,13 +2518,13 @@ input[type="checkbox"]:focus {
 .RadTabStripTop_Metro .rtsLevel1, .RadTabStripTop_Metro .rtsLevel1 .rtsUL,
 .RadTabStrip_Metro .rtsLevel1,
 .RadTabStrip_Metro .rtsLevel1 .rtsUL {
-  background-color: #3aabcf !important;
+  background-color: $rad-control-color !important;
 }
 .RadTabStripTop_Metro .rtsLevel1 .rtsLink, .RadTabStripTop_Metro .rtsLevel1 .rtsUL .rtsLink,
 .RadTabStrip_Metro .rtsLevel1 .rtsLink,
 .RadTabStrip_Metro .rtsLevel1 .rtsUL .rtsLink {
   text-transform: none;
-  border-color: #3aabcf;
+  border-color: $rad-control-color;
 }
 .RadTabStripTop_Metro .rtsLevel1 .rtsSelected, .RadTabStripTop_Metro .rtsLevel1 .rtsLink:hover, .RadTabStripTop_Metro .rtsLevel1 .rtsUL .rtsSelected, .RadTabStripTop_Metro .rtsLevel1 .rtsUL .rtsLink:hover,
 .RadTabStrip_Metro .rtsLevel1 .rtsSelected,
@@ -2543,14 +2545,14 @@ input[type="checkbox"]:focus {
 .RadTabStrip.RadTabStrip_MetroTouch {
   font-family: inherit;
   font-weight: inherit;
-  font-size: 16px;
+  font-size: $body-font-size;
 }
 html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected:hover {
-  border-color: #3aabcf;
-  background-color: #3aabcf;
+  border-color: $rad-control-color;
+  background-color: $rad-control-color;
 }
 .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 {
-  border-bottom-color: #3aabcf;
+  border-bottom-color: $rad-control-color;
 }
 @media (max-width: 600px) {
   .RadTabStrip.RadTabStrip_MetroTouch .rtsLI, .RadTabStrip.RadTabStrip_MetroTouch .rtsLink, .RadTabStrip.RadTabStrip_MetroTouch .rtsUL {
@@ -2567,7 +2569,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
    ========================================================================== */
 /* Currently used by the QueryMenu iPart */
 .RadToolTip_Telerik a:hover {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
 }
 
 /* RadGrid
@@ -2634,8 +2636,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro .rgPageFirst:active,
 .RadGrid.RadGrid_Metro .rgPageLast:active,
 .RadGrid.RadGrid_Metro .rgPager .rgPagerButton {
-  background-color: #3aabcf;
-  border-color: #3aabcf;
+  background-color: $rad-control-color;
+  border-color: $rad-control-color;
   color: #fff !important;
 }
 .RadGrid.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell,
@@ -2648,8 +2650,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro td.rgEditRow .rgSelectedRow,
 .RadGrid.RadGrid_Metro .rgSelectedRow td.rgSorted,
 .RadGrid.RadGrid_Metro th.rgSorted {
-  background-color: #3aabcf;
-  border-color: #3aabcf;
+  background-color: $rad-control-color;
+  border-color: $rad-control-color;
 }
 .RadGrid.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell a,
 .RadGrid.RadGrid_MetroTouch .rgSelectedRow a,
@@ -2666,7 +2668,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_MetroTouch .rgGroupPanel, .RadGrid.RadGrid_MetroTouch .rgGroupPanel caption,
 .RadGrid.RadGrid_Metro .rgGroupPanel,
 .RadGrid.RadGrid_Metro .rgGroupPanel caption {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 .RadGrid.RadGrid_MetroTouch .rgActiveRow td, .RadGrid.RadGrid_MetroTouch .rgActiveRow td.rgSorted,
 .RadGrid.RadGrid_MetroTouch .rgSelectedRow td, .RadGrid.RadGrid_MetroTouch .rgSelectedRow td.rgSorted,
@@ -2676,15 +2678,15 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro .rgSelectedRow td,
 .RadGrid.RadGrid_Metro .rgSelectedRow td.rgSorted,
 .RadGrid.RadGrid_Metro .rgMasterTable .rgActiveCell {
-  border-color: #3aabcf;
+  border-color: $rad-control-color;
 }
 * + html .RadGrid.RadGrid_MetroTouch .rgSelectedRow .rgSorted, * + html
 .RadGrid.RadGrid_Metro .rgSelectedRow .rgSorted {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 * html .RadGrid.RadGrid_MetroTouch .rgSelectedRow .rgSorted, * html
 .RadGrid.RadGrid_Metro .rgSelectedRow .rgSorted {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 .RadGrid.RadGrid_MetroTouch input.rgAdd,
 .RadGrid.RadGrid_MetroTouch input.rgRefresh,
@@ -2694,7 +2696,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro input.rgRefresh,
 .RadGrid.RadGrid_Metro .rgSave,
 .RadGrid.RadGrid_Metro .rgCommandRow .rgCancel {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 .RadGrid.RadGrid_MetroTouch input.rgAdd:hover,
 .RadGrid.RadGrid_MetroTouch input.rgRefresh:hover,
@@ -2724,8 +2726,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadDataPager.RadDataPager_Metro .rdpPageNext:hover,
 .RadDataPager.RadDataPager_Metro .rdpPageLast:hover,
 .RadDataPager.RadDataPager_Metro .rdpPagerButton {
-  background-color: #3aabcf;
-  border-color: #3aabcf;
+  background-color: $rad-control-color;
+  border-color: $rad-control-color;
 }
 
 /* RadScheduler
@@ -2734,15 +2736,15 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   border-top: none;
 }
 .RadScheduler.RadScheduler_Metro .rsHeader {
-  border-color: #3aabcf;
-  background-color: #3aabcf;
+  border-color: $rad-control-color;
+  background-color: $rad-control-color;
 }
 .RadScheduler.RadScheduler_Metro .rsHeader ul a {
-  border-color: #3aabcf;
+  border-color: $rad-control-color;
 }
 .RadScheduler.RadScheduler_Metro .rsHeader h2 {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $font-family-stack;
+  font-weight: $font-weight-bold;
   color: #fff;
   text-transform: none;
   border-bottom: none;
@@ -2759,16 +2761,16 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadMenu.RadMenu_Metro ul.rmRootGroup,
 .RadMenu.RadMenu_MetroTouch div.rmRootGroup,
 .RadMenu.RadMenu_MetroTouch ul.rmRootGroup {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
 }
 .RadMenu.RadMenu_Metro .rmRootLink,
 .RadMenu.RadMenu_MetroTouch .rmRootLink {
-  border-color: #2f8aa7;
+  border-color: $secondary-color;
 }
 .RadMenu.RadMenu_Metro .rmDisabled, .RadMenu.RadMenu_Metro .rmDisabled:hover,
 .RadMenu.RadMenu_MetroTouch .rmDisabled,
 .RadMenu.RadMenu_MetroTouch .rmDisabled:hover {
-  border-color: #2f8aa7;
+  border-color: $secondary-color;
 }
 .RadMenu.RadMenu_Metro .rmGroup .rmFocused, .RadMenu.RadMenu_Metro .rmGroup .rmFocused:hover,
 .RadMenu.RadMenu_Metro .rmGroup .rmSelected,
@@ -2785,8 +2787,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadMenu.RadMenu_MetroTouch .rmGroup .rmLink.rmSelected:hover,
 .RadMenu.RadMenu_MetroTouch .rmGroup .rmExpanded,
 .RadMenu.RadMenu_MetroTouch .rmGroup .rmExpanded:hover {
-  border-color: #2f8aa7;
-  background-color: #2f8aa7;
+  border-color: $secondary-color;
+  background-color: $secondary-color;
   color: #FFF !important;
 }
 
@@ -2797,11 +2799,11 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 /* RadWindow
    ========================================================================== */
 .RadWindow.RadWindow_MetroTouch .rwTitleRow .rwTitlebar, .RadWindow.RadWindow_MetroTouch .rwTitleRow .rwTopLeft, .RadWindow.RadWindow_MetroTouch .rwTitleRow .rwTopRight {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
 }
 .RadWindow.RadWindow_MetroTouch .rwTitleRow td.rwWindowContent a.rwPopupButton:active, .RadWindow.RadWindow_MetroTouch .rwTitleRow td.rwWindowContent a.rwPopupButton:focus {
-  border-color: #2f8aa7;
-  background-color: #2f8aa7;
+  border-color: $secondary-color;
+  background-color: $secondary-color;
 }
 .RadWindow.RadWindow_MetroTouch .rwControlButtons a:focus {
   border-color: #fff;
@@ -2813,10 +2815,10 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadWindow.RadWindow_Metro .rwTitlebar, .RadWindow.RadWindow_Metro .rwTopLeft, .RadWindow.RadWindow_Metro .rwTopRight,
 .RadWindow.RadWindow_Metro .rwTopResize,
 .RadWindow.RadWindow_Metro .rwControlButtons a {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
 }
 .RadWindow.RadWindow_Metro .rwControlButtons a {
-  border-color: #2f8aa7;
+  border-color: $secondary-color;
 }
 .RadWindow.RadWindow_Metro .rwControlButtons a:focus {
   /* give the refresh, expand, close buttons an outline when focused */
@@ -2859,23 +2861,23 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadCalendar.RadCalendar_MetroTouch .rcPrev:hover,
 .RadCalendar.RadCalendar_MetroTouch .rcNext:hover,
 .RadCalendar.RadCalendar_MetroTouch .rcFastNext:hover {
-  border-color: #3aabcf;
+  border-color: $rad-control-color;
 }
 .RadCalendar.RadCalendar_Metro .rcFastPrev:hover:before, .RadCalendar.RadCalendar_Metro .rcPrev:hover:before, .RadCalendar.RadCalendar_Metro .rcNext:hover:before, .RadCalendar.RadCalendar_Metro .rcFastNext:hover:before,
 .RadCalendar.RadCalendar_MetroTouch .rcFastPrev:hover:before,
 .RadCalendar.RadCalendar_MetroTouch .rcPrev:hover:before,
 .RadCalendar.RadCalendar_MetroTouch .rcNext:hover:before,
 .RadCalendar.RadCalendar_MetroTouch .rcFastNext:hover:before {
-  color: #3aabcf;
+  color: $rad-control-color;
 }
 .RadCalendar.RadCalendar_Metro .rcRow .rcToday a,
 .RadCalendar.RadCalendar_MetroTouch .rcRow .rcToday a {
-  border-color: #3aabcf;
+  border-color: $rad-control-color;
 }
 .RadCalendar.RadCalendar_Metro .rcMain .rcRow .rcSelected a,
 .RadCalendar.RadCalendar_MetroTouch .rcMain .rcRow .rcSelected a {
-  border-color: #3aabcf;
-  background: #3aabcf;
+  border-color: $rad-control-color;
+  background: $rad-control-color;
 }
 
 .RadCalendar.RadCalendar_MetroTouch .rcRow a, .RadCalendar.RadCalendar_MetroTouch .rcRow span {
@@ -2910,12 +2912,12 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 .RadCalendarMonthView.RadCalendarMonthView_Metro .rcSelected a,
 .RadCalendarMonthView.RadCalendarMonthView_MetroTouch .rcSelected a {
-  background: #3aabcf;
+  background: $rad-control-color;
 }
 
 .RadCalendarMonthView.RadCalendarMonthView_MetroTouch #rcMView_Today {
-  background: #3aabcf;
-  border-color: #3aabcf;
+  background: $rad-control-color;
+  border-color: $rad-control-color;
 }
 
 .RadCalendarTimeView.RadCalendarTimeView_Metro,
@@ -2925,8 +2927,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 .RadCalendarTimeView.RadCalendarTimeView_Metro td.rcSelected a,
 .RadCalendarTimeView.RadCalendarTimeView_MetroTouch td.rcSelected a {
-  border-color: #3aabcf;
-  background: #3aabcf;
+  border-color: $rad-control-color;
+  background: $rad-control-color;
 }
 
 .RadPicker.RadPicker_Metro .rcCalPopup:hover, .RadPicker.RadPicker_Metro .rcCalPopup:focus, .RadPicker.RadPicker_Metro .rcCalPopup:active, .RadPicker.RadPicker_Metro .rcTimePopup:hover, .RadPicker.RadPicker_Metro .rcTimePopup:focus, .RadPicker.RadPicker_Metro .rcTimePopup:active,
@@ -2936,7 +2938,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadPicker.RadPicker_MetroTouch .rcTimePopup:hover,
 .RadPicker.RadPicker_MetroTouch .rcTimePopup:focus,
 .RadPicker.RadPicker_MetroTouch .rcTimePopup:active {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
 }
 
 /* ==========================================================================
@@ -3104,7 +3106,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   padding-top: .3em;
   padding-bottom: .3em;
   text-align: center;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-size: 280%;
   background-color: #000;
   background-color: rgba(0, 0, 0, 0.45);
@@ -3143,7 +3145,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 .jumbotron.interior p {
   padding: 1.5em 1em 0.8em;
-  font-size: 150%;
+  font-size: $feature-text;
   margin-bottom: 0;
 }
 .jumbotron.interior p:before, .jumbotron.interior p:after {
@@ -3233,8 +3235,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
    ========================================================================== */
 /* Used by the Slideshow iPart */
 .carousel h1, .carousel h2, .carousel h3, .carousel h4, .carousel h5 {
-  font-family: Segoe UI, Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: $font-family-stack;
+  font-weight: $font-weight-bold;
 }
 .carousel h2, .carousel .panel-heading {
   border-bottom: none;
@@ -3254,29 +3256,29 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
    ========================================================================== */
 /* Community left nav */
 .CommunityLinksBlock a {
-  color: #333333;
+  color: $gray;
 }
 .CommunityLinksBlock a:hover {
-  background-color: #93cadc;
-  color: #333333;
+  background-color: $panel-selected-item;
+  color: $gray;
   text-decoration: none;
 }
 .CommunityLinksBlock a.CommunityLinksSelected, .CommunityLinksBlock a.CommunityLinksSelected:hover {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
   color: White;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   text-decoration: none;
 }
 
 /* Community breadcrumb */
 .BreadCrumbCurrent {
-  font-size: 120%;
-  font-weight: bold;
+  font-size: $large-body-text;
+  font-weight: $font-weight-bold;
 }
 
 /*** Communities common elements ***/
 .CommunityItemActionLinks a:hover {
-  background-color: #2f8aa7;
+  background-color: $secondary-color;
 }
 
 .CommunityItemTitle {
@@ -3371,8 +3373,8 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 .DonorBannerTextBackgroundHome p, .DonorBannerTextBackgroundInterior p {
   color: #fff;
-  font-size: 120%;
-  line-height: 1.6em;
+  font-size: $large-body-text;
+  line-height: $body-line-height;
   margin: 1em;
   padding: 0.4em;
 }
@@ -3384,7 +3386,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 /* Classes that can be used for iParts and HTML content */
 /* Use class CalloutArea1 or CalloutArea2 to call out an iPart or content block */
 .CalloutArea1, .CalloutBlockType1 {
-  background-color: #009b96;
+  background-color: $section-label-color;
   padding: 10px;
   margin: 20px;
   border-radius: 0;
@@ -3406,7 +3408,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 
 .CalloutArea2 {
-  background-color: #dc4f00;
+  background-color: $primary-color;
   padding: 10px;
   margin: 20px;
   border-radius: 0;
@@ -3428,7 +3430,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 
 .CalloutArea3 {
-  background-color: #23749d;
+  background-color: $link-color;
   padding: 10px;
   margin: 20px;
   border-radius: 0;
@@ -3451,12 +3453,12 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 .CalloutPart2 .panel-heading,
 .CalloutPart2 .panel-body {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 
 .CalloutPart1 .panel-heading,
 .CalloutPart1 .panel-body {
-  background-color: #93cadc;
+  background-color: $panel-selected-item;
 }
 
 .CalloutPart2 .panel-heading.Distinguish,
@@ -3467,7 +3469,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 /* Use class ContentBlockPrimary to give a block of content extra emphasis */
 .ContentBlockPrimary {
   padding: 20px;
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 .ContentBlockPrimary .Quote {
   background-color: #fff;
@@ -3478,9 +3480,9 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .SecondaryColumn .PanelTitle,
 .SecondaryColumn .panel-title {
   font-family: inherit;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   font-size: 90%;
-  color: #999999;
+  color: $gray-lightened;
   text-transform: uppercase;
 }
 .SecondaryColumn h2,
@@ -3500,7 +3502,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   padding: 0;
 }
 .SecondaryColumn .CommunityItemTitle {
-  font-weight: normal;
+  font-weight: $font-weight-normal;
   font-size: inherit;
 }
 .SecondaryColumn .RadGrid .rgRow td,
@@ -3546,7 +3548,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   text-decoration: underline;
 }
 .BlockList p {
-  color: #333333;
+  color: $gray;
   margin-bottom: 0;
 }
 
@@ -3565,7 +3567,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .BlockTLItem h4,
 .BlockList h4 {
   font-size: 110%;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
 }
 
 /* PublishDate and ReadMoreLink are used in the Block tagged list format */
@@ -3576,12 +3578,12 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 /* Use on the blockquote element for a styled quote */
 .Quote {
-  background: #f4f5ed;
-  border-left: 10px solid #dc4f00;
+  background: $gray-bg;
+  border-left: 10px solid $primary-color;
   margin: 1.5em .7em 1.5em 0;
   padding: 1.5em .7em;
   quotes: "\201C" "\201D" "\201C" "\201D";
-  font-weight: normal;
+  font-weight: $font-weight-normal;
 }
 .Quote:before {
   color: #ccd1ab;
@@ -3605,7 +3607,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 @media (min-width: 768px) {
   .Quote {
-    font-size: 120%;
+    font-size: $large-body-text;
   }
   .Quote cite {
     font-size: 90%;
@@ -3613,7 +3615,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   }
 }
 .no-mqs .Quote {
-  font-size: 120%;
+  font-size: $large-body-text;
 }
 .no-mqs .Quote cite {
   font-size: 90%;
@@ -3621,7 +3623,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 }
 
 .QuoteStyle2 {
-  border-left-color: #23749d;
+  border-left-color: $link-color;
 }
 
 /* CalloutPanelField1 can be used as a wrapper for PanelFields, or on the PanelField directly, to callout the first label. */
@@ -3658,11 +3660,11 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 /* TotalBox can be used as a wrapper for PanelFields, or on the PanelField directly, to visually distinguish a calculated total. */
 .TotalBox {
-  border-color: #ddd;
+  border-color: $border-color;
 }
 
 .TotalBox label {
-  background-color: #dc4f00;
+  background-color: $primary-color;
   color: #fff;
   padding: .25em .75em;
   color: #fff;
@@ -3670,7 +3672,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 /* Add zone style "CCOGrayBg" to give CCO content a gray background */
 .CCOGrayBg .ContentWizardDisplay {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
 }
 
 .CCOGrayBg .yui-g {
@@ -3685,7 +3687,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 /* Use the FeatureText class to make a block of text larger for emphasis */
 .FeatureText {
   color: #595959;
-  font-size: 150%;
+  font-size: $feature-text;
   line-height: 170%;
 }
 
@@ -3703,20 +3705,20 @@ a.FeatureActionLink {
   -webkit-transition: all 0.2s ease 0;
   -o-transition: all 0.2s ease 0;
   transition: all 0.2s ease 0;
-  font-family: Raleway, Verdana, sans-serif;
+  font-family: $font-family-heading-stack;
   font-size: 110%;
-  font-weight: 200;
+  font-weight: $font-weight-thin;
   line-height: 1.5em;
   padding: 8px 0;
   text-decoration: none;
 }
 @media (min-width: 992px) {
   a.FeatureActionLink {
-    font-size: 150%;
+    font-size: $feature-text;
   }
 }
 .no-mqs a.FeatureActionLink {
-  font-size: 150%;
+  font-size: $feature-text;
 }
 a.FeatureActionLink:hover {
   text-decoration: underline;
@@ -3784,7 +3786,7 @@ a.FeatureActionLink:hover {
 /* Feature Header
    ========================================================================== */
 .feature-header {
-  color: #dc4f00;
+  color: $primary-color;
   border-bottom: none;
   margin-bottom: .8em;
 }
@@ -3822,7 +3824,7 @@ a.FeatureActionLink:hover {
   margin-top: 0;
 }
 .feature-link-with-image.feature-link-1 .feature-link-text {
-  background-color: #dc4f00;
+  background-color: $primary-color;
   background-color: rgba(220, 79, 0, 0.75);
 }
 .feature-link-with-image.feature-link-1:hover .feature-link-text {
@@ -3830,7 +3832,7 @@ a.FeatureActionLink:hover {
   background-color: rgba(169, 61, 0, 0.75);
 }
 .feature-link-with-image.feature-link-2 .feature-link-text {
-  background-color: #3aabcf;
+  background-color: $rad-control-color;
   background-color: rgba(58, 171, 207, 0.75);
 }
 .feature-link-with-image.feature-link-2:hover .feature-link-text {
@@ -3841,7 +3843,7 @@ a.FeatureActionLink:hover {
 /* Feature Text Inline
    ========================================================================== */
 .feature-text-inline {
-  color: #dc4f00;
+  color: $primary-color;
 }
 
 /* Header Links
@@ -3853,10 +3855,10 @@ a.FeatureActionLink:hover {
   text-decoration: none;
 }
 .header-link a, .header-link a:visited {
-  color: #333333;
+  color: $gray;
 }
 .header-link a:hover, .header-link a:active, .header-link a:focus {
-  color: #23749d;
+  color: $link-color;
 }
 
 /* Image Banners
@@ -3976,7 +3978,7 @@ a.FeatureActionLink:hover {
    ========================================================================== */
 /* To enhance the display of a donation page, apply the donate-page class to the Donation Creator iPart's CSS Class */
 .donate-page .GiftItemName {
-  color: #dc4f00;
+  color: $primary-color;
   font-size: 250%;
 }
 
@@ -3987,7 +3989,7 @@ a.FeatureActionLink:hover {
 /* Alt background colors
    ========================================================================== */
 .AltBgColor1 {
-  background-color: #f4f5ed;
+  background-color: $gray-bg;
   padding: 10px;
 }
 
@@ -4035,7 +4037,7 @@ a.FeatureActionLink:hover {
 }
 
 .AltBgColor3 > .panel {
-  background-color: #dc4f00;
+  background-color: $primary-color;
 }
 .AltBgColor3 > .panel.panel-border {
   border-color: #c34600;
@@ -4065,7 +4067,7 @@ a.FeatureActionLink:hover {
 }
 .ProgressTracker_Dashboard .label,
 .ProgressTracker_Dashboard_Overview .label {
-  font-size: 120%;
+  font-size: $large-body-text;
   display: block;
   margin-top: 10px;
 }
@@ -4091,7 +4093,7 @@ a.FeatureActionLink:hover {
 .ProgressTracker2 .count,
 .ProgressTracker_Dashboard .count,
 .ProgressTracker_Dashboard_Overview .count {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
   display: block;
   line-height: 1;
   letter-spacing: -1px;
@@ -4115,7 +4117,7 @@ a.FeatureActionLink:hover {
 .ProgressTracker_Dashboard_Overview .ProgressBar > span {
   display: block;
   height: 100%;
-  background-color: #dc4f00;
+  background-color: $primary-color;
   position: relative;
   overflow: hidden;
 }

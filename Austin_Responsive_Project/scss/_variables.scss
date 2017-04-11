@@ -1,3 +1,84 @@
-/* Variables */
+/* Variables
+   ========================================================================== */
 
-$springgreen: springgreen;
+/* Colors
+   ========================================================================== */
+
+$primary-color: #dc4f00; 
+$secondary-color: #2f8aa7;
+$secondary-color-hover: #267087;
+$rad-control-color: #3aabcf;
+$progress-color: #ffdd6f;
+$progress-bar: #db9770;
+$section-label-color: #009b96;
+
+$gray : #333333;
+$gray-pretty-dark : #424242;
+$gray-medium : #555;
+$gray-lightened : #999999;
+
+$gray-bg: #f4f5ed;
+
+$link-color: #23749d;
+$link-hover-color: #1a5573;
+$link-visited-color: #2883b2;
+
+$helper-text-color: #0064cd;
+
+/* Font Weights
+   ========================================================================== */
+
+$font-weight-thin: 200;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-weight-bolder: bolder;
+
+/* Typography
+   ========================================================================== */
+
+$font-family-stack: 'Segoe UI', Helvetica, Arial, sans-serif;
+$font-family-heading-stack: Raleway, Verdana, sans-serif;
+
+$body-font-size: 16px;
+$body-font-size-lg: 18px;
+$body-font-size-sm: 14px;
+
+$body-line-height: 1.6;
+
+/* Headings
+   ========================================================================== */
+
+$font-size-h1: 250%;
+$font-size-h2: 170%;
+$font-size-h3: 160%;
+$font-size-h4: 150%;
+$font-size-h5: 140%;
+$font-size-h6: 130%;
+
+$feature-text: 150%;
+
+$large-body-text: 120%;
+
+/* Common Padding Settings
+   ========================================================================== */
+
+$common-padding-vertical: 10px;
+$common-padding-horizontal: 15px;
+
+/* Tables and Borders
+   ========================================================================== */
+
+$border-color: #ddd;
+$border-style: dotted;
+$border: 1px dotted #666666;
+
+$panel-selected-item: #93cadc;
+
+/* Inputs
+   ========================================================================== */
+
+$input-border-color: #ccc;
+$input-border-style: solid;
+$input-border: 1px solid #ccc;
+
+$input-border-color-focus: #66afe9;
