@@ -1,2 +1,26 @@
 /* Modules
    ========================================================================== */
+
+// Navigation
+.nav-auxiliary a {
+    text-decoration: none;
+}
+
+// Primary Navigation
+.RadMenu.RadMenu_Austin .RadSiteMap,
+.RadMenu.RadMenu_Austin .RadSiteMap .rsmItem,
+.RadMenu.RadMenu_Austin .RadSiteMap .rsmTwoLevels .rsmItem {
+    font-size: 0.96em;
+}
+
+.rmItem:after {
+    content: " | ";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rmItem:last-child:after {
+    content: "";
+}

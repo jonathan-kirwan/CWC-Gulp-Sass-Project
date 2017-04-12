@@ -1,8 +1,8 @@
-# Gulp Sass workflow for iMIS
+# CWC Gulp Sass workflow for iMIS
 
-A Gulp script for compiling Sass to CSS code (and more) for iMIS sites. Applies to -
+A Gulp script for compiling Sass to CSS code (and more) for CWC. Applies to -
 
-* iMIS version 20.2.49.5903
+* CWC iMIS version 20.2.49.5903
 * Austin Responsive theme
 
 ## Tasks

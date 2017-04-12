@@ -1,19 +1,31 @@
 /* Variables
    ========================================================================== */
 
+/* Fonts
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|PT+Serif:400,700');
+
+$open-sans: 'Open Sans', sans-serif;
+$pt-serif: 'PT Serif', serif;
+
 /* Colors
    ========================================================================== */
 
-$primary-color: #dc4f00; 
-$secondary-color: #2f8aa7;
-$secondary-color-hover: #267087;
+// Used for h1, .h1, .PageTitle and .PrimaryButton, .SaveAndClose, .SaveAs, .UsePrimaryButton .TextButton, .UsePrimaryButton .TextButtonWithImage, #masterHeaderActionArea a, .RadGrid input.PrimaryButton
+$primary-color: #ae9c4d;
+$primary-color-hover: lighten($primary-color, 10%);
+// Used for .btn, .TextButton, .TextButtonWithImage, .ruButton, #masterHeaderActionArea a, .RadGrid input.TextButton
+$secondary-color: #eae7dc;
+$secondary-color-hover: lighten($secondary-color, 10%);
 $rad-control-color: #3aabcf;
 $progress-color: #ffdd6f;
 $progress-bar: #db9770;
 $section-label-color: #009b96;
 
 $gray : #333333;
-$gray-pretty-dark : #424242;
+// Used for h1, .h1, .PageTitle, h2, .h2, .PanelTitle
+$gray-pretty-dark : #002b4f;
 $gray-medium : #555;
 $gray-lightened : #999999;
 
@@ -30,14 +42,14 @@ $helper-text-color: #0064cd;
 
 $font-weight-thin: 200;
 $font-weight-normal: normal;
-$font-weight-bold: bold;
-$font-weight-bolder: bolder;
+$font-weight-bold: 400;
+$font-weight-bolder: 700;
 
 /* Typography
    ========================================================================== */
 
-$font-family-stack: 'Segoe UI', Helvetica, Arial, sans-serif;
-$font-family-heading-stack: Raleway, Verdana, sans-serif;
+$font-family-stack: $open-sans;
+$font-family-heading-stack: $pt-serif;
 
 $body-font-size: 16px;
 $body-font-size-lg: 18px;
@@ -58,6 +70,10 @@ $font-size-h6: 130%;
 $feature-text: 150%;
 
 $large-body-text: 120%;
+
+/* Primary Menu
+   ========================================================================== */
+$primary-menu-link-color: #002b4f;
 
 /* Common Padding Settings
    ========================================================================== */
@@ -82,3 +98,8 @@ $input-border-style: solid;
 $input-border: 1px solid #ccc;
 
 $input-border-color-focus: #66afe9;
+
+/* Footer
+   ========================================================================== */
+
+$footer-bg: #edeff4;

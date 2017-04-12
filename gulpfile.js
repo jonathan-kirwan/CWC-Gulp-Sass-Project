@@ -29,6 +29,11 @@ gulp.task('xml', function () {
         .pipe(gulp.dest('./Austin_Responsive/css'))
 });
 
+gulp.task('templates', function () {
+    return gulp.src('./Austin_Responsive_Project/templates/**/*.html')
+        .pipe(gulp.dest('./Austin_Responsive/templates'))
+});
+
 gulp.task('watch', function () {
     gulp.watch('./Austin_Responsive_Project/scss/**/*.scss', ['sass']);
 })

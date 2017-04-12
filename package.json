@@ -1,7 +1,7 @@
 {
-  "name": "gulp-sass-workflow-for-imis",
+  "name": "cwc-gulp-project",
   "version": "1.0.0",
-  "description": "Gulp Sass workflow for iMIS",
+  "description": "CWC Gulp Sass workflow for iMIS",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS.git"
+    "url": "git+https://github.com/jonathan-kirwan/CWC-Gulp-Sass-Project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS/issues"
+    "url": "https://github.com/jonathan-kirwan/CWC-Gulp-Sass-Project.git/issues"
   },
-  "homepage": "https://github.com/jonathan-kirwan/Gulp-Sass-workflow-for-iMIS#readme"
+  "homepage": "https://github.com/jonathan-kirwan/CWC-Gulp-Sass-Project.git#readme"
 }

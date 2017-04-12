@@ -1,2 +1,18 @@
 /* Base Overrides
    ========================================================================== */
+
+body {
+    font-size: $body-font-size-sm;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: $body-font-size;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: $body-font-size-lg;
+    }
+}

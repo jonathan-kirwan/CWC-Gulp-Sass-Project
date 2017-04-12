@@ -2,7 +2,7 @@
 
 @charset "UTF-8";
 /* Responsive version of the Austin Theme for iMIS */
-@import url("//fonts.googleapis.com/css?family=Raleway:200");
+
 /* ==========================================================================
    MASTER PAGE LAYOUT
    ========================================================================== */
@@ -443,7 +443,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 #masterHeaderBackground,
 .header {
-  border-bottom: 2px dotted #eeeeee;
+  border-bottom: none;
 }
 
 /* Universal search control */
@@ -635,7 +635,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .footer-content {
-  background-color: $gray-pretty-dark;
+  background-color: $footer-bg;
   color: #fff;
   text-align: center;
 }
@@ -709,7 +709,7 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 /* Old-style footer (pre-responsive) */
 #ft {
-  background-color: $gray-pretty-dark;
+  background-color: $footer-bg;
   color: #fff;
 }
 #ft h4 {
@@ -892,7 +892,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 .RadMenu.RadMenu_Austin .rmLink,
 .RadMenu.RadMenu_Austin .rsmLink {
-  color: #666666;
+  color: $primary-color;
   text-decoration: none;
   display: block;
   position: relative;
@@ -918,7 +918,7 @@ img.ImgNoResize, .ImgNoResize img {
   color: #fff;
 }
 .RadMenu.RadMenu_Austin .rmGroup {
-  background-color: $gray-pretty-dark;
+  background-color: $secondary-color;
 }
 .RadMenu.RadMenu_Austin .rmDisabled > .rmLink,
 .RadMenu.RadMenu_Austin .rsmDisabled > .rsmLink {
@@ -934,8 +934,9 @@ img.ImgNoResize, .ImgNoResize img {
   position: relative;
 }
 .RadMenu.RadMenu_Austin .rmRootGroup > .rmItem > .rmLink {
-  text-transform: uppercase;
-  font-size: 100%;
+  text-transform: capitalize;
+  font-size: 120%;
+  font-family: $font-family-heading-stack;
   font-weight: $font-weight-bold;
   letter-spacing: 0;
 }
@@ -1036,9 +1037,9 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink,
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:hover,
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:focus {
-  text-transform: uppercase;
-  color: #8f8f8f;
-  font-weight: $font-weight-bold;
+  text-transform: capitalize;
+  color: $primary-color;
+  font-weight: $font-weight-bolder;
   letter-spacing: 0;
 }
 .RadMenu_Austin .rmSlide .MegaDropDownMenuSeperator .rsmLink {
@@ -1905,6 +1906,7 @@ input[type="checkbox"]:focus {
   white-space: normal;
   text-decoration: none;
   padding: 5px 10px;
+  font-family: $font-family-heading-stack;
   font-size: $body-font-size;
   line-height: $body-line-height;
   border-radius: 0;
@@ -1997,7 +1999,7 @@ input[type="checkbox"]:focus {
 .ruButton,
 #masterHeaderActionArea a,
 .RadGrid input.TextButton {
-  color: #fff;
+  color: #ae9c4d;
   background-color: $secondary-color;
   border-color: transparent;
 }
@@ -2151,7 +2153,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.PrimaryButton:active,
 .RadGrid input.PrimaryButton:visited {
   color: #fff;
-  background-color: #b34000;
+  background-color: $primary-color-hover;
   border-color: transparent;
 }
 .PrimaryButton:active,
