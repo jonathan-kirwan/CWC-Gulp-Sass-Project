@@ -17,7 +17,7 @@
 .container,
 .header-container,
 .SliderPage1 {
-  max-width: 1170px;
+  /* max-width: 1270px; */
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -355,7 +355,12 @@ h2,
 div.PanelTitle,
 .panel-heading.Distinguish {
   min-height: 0;
-  border-bottom-style: dotted;
+  border-bottom-style: none;
+}
+
+h3 {
+  color: $primary-color;
+  font-family: $font-family-heading-stack;
 }
 
 h4, .SectionLabel, h5 {
@@ -461,10 +466,10 @@ img.ImgNoResize, .ImgNoResize img {
 
 /* header logo */
 #masterHeaderImage {
-  background-image: url("images/HeaderLogo.png");
+  background-image: url("images/CCLogoRGB_325px.png");
   background-repeat: no-repeat;
-  width: 122px;
-  height: 38px;
+  width: 325px;
+  height: 52px;
   /* The following are needed to hide the text, but allow it to be read by screen readers */
   text-indent: -9999px;
   overflow: hidden;
@@ -480,7 +485,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 #masterDonorHeaderImage {
-  background-image: url("images/HeaderLogo.png");
+  background-image: url("images/CCLogoRGB_325px.png");
   background-repeat: no-repeat;
   width: 122px;
   height: 38px;
@@ -695,8 +700,8 @@ img.ImgNoResize, .ImgNoResize img {
 }
 
 .footer-nav-copyright {
-  background-color: #222222;
-  color: #999;
+  background-color: $footer-bg;
+  color: $gray;
 }
 .footer-nav-copyright a, .footer-nav-copyright a:visited {
   color: #fff;
@@ -992,7 +997,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 .RadMenu_Austin .rmSlide .rmLink,
 .RadMenu_Austin .rmSlide .rsmLink {
-  color: #fff;
+  color: $gray-pretty-dark;
 }
 .RadMenu_Austin .rmSlide .rmSeparator,
 .RadMenu_Austin .rmSlide .rmVertical > .rmSeparator,
@@ -1909,6 +1914,7 @@ input[type="checkbox"]:focus {
   font-family: $font-family-heading-stack;
   font-size: $body-font-size;
   line-height: $body-line-height;
+  text-transform: uppercase;
   border-radius: 0;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2123,8 +2129,8 @@ input[type="checkbox"]:focus {
 .UsePrimaryButton .TextButtonWithImage,
 #masterHeaderActionArea a,
 .RadGrid input.PrimaryButton {
-  color: #fff;
-  background-color: $primary-color;
+  color: $primary-color;
+  background-color: $secondary-color;
   border-color: transparent;
 }
 .PrimaryButton:hover, .PrimaryButton:focus, .PrimaryButton:active, .PrimaryButton:visited,
@@ -2152,8 +2158,8 @@ input[type="checkbox"]:focus {
 .RadGrid input.PrimaryButton:focus,
 .RadGrid input.PrimaryButton:active,
 .RadGrid input.PrimaryButton:visited {
-  color: #fff;
-  background-color: $primary-color-hover;
+  color: $primary-color;
+  background-color: $secondary-color-hover;
   border-color: transparent;
 }
 .PrimaryButton:active,
@@ -3688,8 +3694,9 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 
 /* Use the FeatureText class to make a block of text larger for emphasis */
 .FeatureText {
-  color: #595959;
+  color: $gray-pretty-dark;
   font-size: $feature-text;
+  font-weight: $font-weight-thin;
   line-height: 170%;
 }
 

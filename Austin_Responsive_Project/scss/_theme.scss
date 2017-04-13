@@ -1,2 +1,28 @@
 /* Theme
    ========================================================================== */
+
+.row--hero {
+    background: url(images/banners/home-page-header.jpg) no-repeat 0 0 / cover;
+    height: 65.86538461538461vh;
+}
+
+.row--member-search {
+    background: url(images/banners/member-search-banner.jpg) no-repeat 0 0 / cover;
+    height: 36.82692307692307vh;
+}
+
+.row--member-search h2,
+.row--member-search p {
+    @extend .HeroContent h2;
+}
+
+.row--hero-events {
+    background: url(images/banners/events-page-header.jpg) no-repeat 0 0 / cover;
+    min-height: 20em;
+    height: 65.86538461538461vh;
+}
+
+.row--dates {
+    background: blue;
+    min-height: 20em;
+}

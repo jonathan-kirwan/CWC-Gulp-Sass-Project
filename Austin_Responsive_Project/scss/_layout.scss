@@ -1,6 +1,52 @@
 /* Layouts
    ========================================================================== */
 
-.row__full-width {
+// Full Width Rows
+.row {
+    margin-bottom: (15px / $body-font-size-sm) + 0em;
+}
+
+@media (min-width: 768px) {
+    .row {
+        margin-bottom: (30px / $body-font-size) + 0em;
+    }
+}
+
+@media (min-width: 992px) {
+    .row {
+        margin-bottom: (40px / $body-font-size-lg) + 0em;
+    }
+}
+
+.container .row:not(.row--full-width),
+.header-container,
+.SliderPage1 .row {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.row--full-width {
     width: 100%;
+}
+
+// Constrain Width of Columns in Full Width Containers 
+.row-full-width>div[class*='col'] {
+    float: none;
+    margin: 0 auto !important;
+    max-width: 1270px;
+}
+
+// Cards
+@media (min-width: 768px) {
+    .row-card .ContentItemContainer,
+    .card-block {
+        padding: 0 (15px / $body-font-size) + 0em;
+    }
+}
+
+@media (min-width: 992px) {
+    .row-card .ContentItemContainer,
+    .card-block {
+        padding: 0 (15px / $body-font-size-lg) + 0em;
+    }
 }
