@@ -4,25 +4,30 @@
 .row--hero {
     background: url(images/banners/home-page-header.jpg) no-repeat 0 0 / cover;
     height: 65.86538461538461vh;
+    max-height: 475px;
 }
 
 .row--member-search {
     background: url(images/banners/member-search-banner.jpg) no-repeat 0 0 / cover;
     height: 36.82692307692307vh;
+    max-height: 265px;
 }
 
 .row--member-search h2,
 .row--member-search p {
-    @extend .HeroContent h2;
+    color: #fff;
+    margin: 0 8px 8px 8px;
 }
 
 .row--hero-events {
     background: url(images/banners/events-page-header.jpg) no-repeat 0 0 / cover;
     min-height: 20em;
     height: 65.86538461538461vh;
+    max-height: 475px;
 }
 
 .row--dates {
-    background: blue;
+    background: lime;
     min-height: 20em;
+    max-height: 265px;
 }

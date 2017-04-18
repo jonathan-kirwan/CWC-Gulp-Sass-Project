@@ -838,7 +838,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmText,
 .RadMenu.RadMenu_Austin .rmHorizontal .rmText,
 .RadMenu.RadMenu_Austin .rmSlide .rmText {
-  padding: $common-padding-vertical $common-padding-horizontal;
+  padding: 10px 25px 10px 15px;
 }
 .RadMenu.RadMenu_Austin .rmSlide .MegaDropDownMenuOuter > .rmText {
   /* when mega menus are on, don't add padding around the rmText */
@@ -897,7 +897,7 @@ img.ImgNoResize, .ImgNoResize img {
 }
 .RadMenu.RadMenu_Austin .rmLink,
 .RadMenu.RadMenu_Austin .rsmLink {
-  color: $primary-color;
+  color: $gray-pretty-dark;
   text-decoration: none;
   display: block;
   position: relative;
@@ -919,8 +919,8 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmRootLink:hover,
 .RadMenu.RadMenu_Austin .rmRootLink:focus {
   /* root item hover and focus styles */
-  background-color: $gray-pretty-dark;
-  color: #fff;
+  background-color: $secondary-color;
+  color: $gray-pretty-dark;
 }
 .RadMenu.RadMenu_Austin .rmGroup {
   background-color: $secondary-color;
@@ -1044,7 +1044,8 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem.rsmDisabled > .rsmLink:focus {
   text-transform: capitalize;
   color: $primary-color;
-  font-weight: $font-weight-bolder;
+  font-family: $font-family-heading-stack;
+  font-weight: $font-weight-bold;
   letter-spacing: 0;
 }
 .RadMenu_Austin .rmSlide .MegaDropDownMenuSeperator .rsmLink {

@@ -14,6 +14,7 @@
 }
 
 .rmItem:after {
+    color: $primary-color;
     content: " | ";
     position: absolute;
     right: 0;
