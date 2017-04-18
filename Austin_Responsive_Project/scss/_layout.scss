@@ -8,25 +8,32 @@
 
 @media (min-width: 768px) {
     .row {
-        margin-bottom: (30px / $body-font-size) + 0em;
+        margin-bottom: (20px / $body-font-size) + 0em;
     }
 }
 
 @media (min-width: 992px) {
     .row {
-        margin-bottom: (40px / $body-font-size-lg) + 0em;
+        margin-bottom: (30px / $body-font-size-lg) + 0em;
     }
 }
 
 .container .row:not(.row--full-width),
 .header-container,
-.SliderPage1 .row {
+.SliderPage1 .row,
+.footer-content,
+.footer-nav-copyright {
     max-width: 1270px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .row--full-width {
-    width: 100%;
+    /* width: 100%; */
+}
+
+.row--border-bottom {
+    border-bottom: 1px solid $primary-color;
 }
 
 // Constrain Width of Columns in Full Width Containers 

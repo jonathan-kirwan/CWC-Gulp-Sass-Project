@@ -206,7 +206,7 @@
 /* Main
    ========================================================================== */
 #masterContentArea {
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 /* This applies to the breadcrumb area */
@@ -278,6 +278,7 @@
 body {
   font-family: $font-family-stack;
   font-size: $body-font-size;
+  font-weight: $font-weight-thin;
   line-height: $body-line-height;
   color: $gray;
 }
@@ -641,12 +642,12 @@ img.ImgNoResize, .ImgNoResize img {
 
 .footer-content {
   background-color: $footer-bg;
-  color: #fff;
+  color: $gray-medium;
   text-align: center;
 }
 .footer-content h2 {
   margin-top: 0;
-  color: #fff;
+  color: $gray-medium;
   border-bottom: none;
 }
 .footer-content a {
@@ -1045,7 +1046,8 @@ img.ImgNoResize, .ImgNoResize img {
   text-transform: capitalize;
   color: $primary-color;
   font-family: $font-family-heading-stack;
-  font-weight: $font-weight-bold;
+  font-size: 120%;
+  font-weight: $font-weight-bolder;
   letter-spacing: 0;
 }
 .RadMenu_Austin .rmSlide .MegaDropDownMenuSeperator .rsmLink {
@@ -2291,14 +2293,14 @@ input[type="checkbox"]:focus {
 .UseMediumButton .TextButton,
 .UseMediumButton .TextButtonWithImage {
   font-size: $large-body-text !important;
-  padding: 9px 14px !important;
+  padding: 10px 25px !important;
 }
 
 .LargeButton,
 .UseLargeButton .TextButton,
 .UseLargeButton .TextButtonWithImage {
   font-size: $feature-text !important;
-  padding: 12px 17px !important;
+  padding: 10px 25px !important;
 }
 
 .CalloutArea1 .btn.PrimaryButton,
@@ -3698,7 +3700,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
   color: $gray-pretty-dark;
   font-size: $feature-text;
   font-weight: $font-weight-thin;
-  line-height: 170%;
+  line-height: 150%;
 }
 
 /* Use the CenterText class to center the text within the iPart */

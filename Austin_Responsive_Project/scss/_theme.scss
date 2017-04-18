@@ -11,6 +11,13 @@
     background: url(images/banners/member-search-banner.jpg) no-repeat 0 0 / cover;
     height: 36.82692307692307vh;
     max-height: 265px;
+    position: relative;
+}
+
+.row--member-search>[class*='col'] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .row--member-search h2,
@@ -26,8 +33,9 @@
     max-height: 475px;
 }
 
-.row--dates {
-    background: lime;
+.row--hero-the-master {
+    background: url(images/banners/The-Master-page-header.jpg) no-repeat 0 0 / cover;
     min-height: 20em;
-    max-height: 265px;
+    height: 65.86538461538461vh;
+    max-height: 475px;
 }
