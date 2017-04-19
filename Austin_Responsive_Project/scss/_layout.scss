@@ -1,6 +1,10 @@
 /* Layouts
    ========================================================================== */
 
+#masterContentArea {
+    padding: 0;
+}
+
 // Full Width Rows
 .row {
     margin-bottom: (15px / $body-font-size-sm) + 0em;
@@ -23,13 +27,15 @@
 .SliderPage1 .row,
 .footer-content,
 .footer-nav-copyright {
-    max-width: 1270px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    max-width: 1270px;
 }
 
 .row--full-width {
-    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .row--border-bottom {
@@ -56,4 +62,10 @@
     .card-block {
         padding: 0 (15px / $body-font-size-lg) + 0em;
     }
+}
+
+// Reduce Padding of Headers in Card Style Containers
+
+.WebPartZone--heading-zone .ContentItemContainer {
+    margin-bottom: 0.9em;
 }
