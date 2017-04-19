@@ -27,22 +27,30 @@
 }
 
 // Anchor Menu
-
 .row--anchor-menu {
     background: $secondary-color;
 }
 
-.row.row--anchor-menu ul {
+.row--anchor-menu ul {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.row.row--anchor-menu ul li {
+.row--anchor-menu li {
     display: inline;
     padding: 5px 20px 5px 10px;
     position: relative;
+}
+
+.row--anchor-menu li a {
+    color: $gray-pretty-dark;
+    font-family: $pt-serif;
+    font-weight: $font-weight-bold;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .row--anchor-menu li:after {

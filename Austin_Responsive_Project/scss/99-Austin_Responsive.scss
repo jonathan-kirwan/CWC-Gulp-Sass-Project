@@ -478,11 +478,11 @@ img.ImgNoResize, .ImgNoResize img {
 }
 @media (min-width: 768px) {
   #masterHeaderImage {
-    margin-top: 38px;
+    margin-top: 0;
   }
 }
 .no-mqs #masterHeaderImage {
-  margin-top: 38px;
+  margin-top: 0;
 }
 
 #masterDonorHeaderImage {
