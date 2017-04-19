@@ -1,29 +1,18 @@
 /* Theme
    ========================================================================== */
 
+// Larger Heros
+
 .row--hero {
     background: url(images/banners/home-page-header.jpg) no-repeat center center / cover;
     height: 65.86538461538461vh;
     max-height: 475px;
 }
 
-.row--member-search {
-    background: url(images/banners/member-search-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
-}
-
-.row--member-search>[class*='col'] {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.row--member-search h2,
-.row--member-search p {
-    color: #fff;
-    margin: 0 8px 8px 8px;
+.row--hero-membership,
+.row--hero-civic-city,
+.row--hero-charity {
+    background: gold; // to be changed
 }
 
 .row--hero-events {
@@ -38,4 +27,31 @@
     min-height: 20em;
     height: 65.86538461538461vh;
     max-height: 475px;
+}
+
+// Smaller Heros
+
+.row--member-search {
+    background: url(images/banners/member-search-banner.jpg) no-repeat center center / cover;
+    height: 36.82692307692307vh;
+    max-height: 265px;
+    position: relative;
+}
+
+.row--the-masters-archive,
+.row--become-a-charity,
+.row--legacies {
+    background: gold; // to be changed
+}
+
+.row--member-search>[class*='col'] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.row--member-search h2,
+.row--member-search p {
+    color: #fff;
+    margin: 0 8px 8px 8px;
 }

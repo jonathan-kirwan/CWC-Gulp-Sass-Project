@@ -25,3 +25,35 @@
 .rmItem:last-child:after {
     content: "";
 }
+
+// Anchor Menu
+
+.row--anchor-menu {
+    background: $secondary-color;
+}
+
+.row.row--anchor-menu ul {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.row--anchor-menu ul li {
+    display: inline;
+    padding: 5px 20px 5px 10px;
+    position: relative;
+}
+
+.row--anchor-menu li:after {
+    color: $primary-color;
+    content: " | ";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.row--anchor-menu li:last-child:after {
+    content: "";
+}
