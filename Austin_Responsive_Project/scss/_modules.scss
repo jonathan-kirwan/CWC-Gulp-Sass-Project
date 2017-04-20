@@ -29,17 +29,29 @@
 // Anchor Menu
 .row--anchor-menu {
     background: $secondary-color;
+    padding: 1em 0;
+}
+
+.row--anchor-menu .ContentItemContainer {
+    margin-bottom: 0;
 }
 
 .row--anchor-menu ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .row--anchor-menu ul {
+        flex-direction: row;
+    }
 }
 
 .row--anchor-menu li {
-    display: inline;
+    display: inline-flex;
     padding: 5px 20px 5px 10px;
     position: relative;
 }
@@ -53,15 +65,38 @@
     text-transform: uppercase;
 }
 
-.row--anchor-menu li:after {
-    color: $primary-color;
-    content: " | ";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+@media (min-width: 768px) {
+    .row--anchor-menu li:after {
+        color: $primary-color;
+        content: " | ";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .row--anchor-menu li:last-child:after {
+        content: "";
+    }
 }
 
-.row--anchor-menu li:last-child:after {
-    content: "";
+// Search Results
+.GridCardStyle .RadGrid {
+    border: none;
+}
+
+.SearchResultSummary .ImageSection {
+    display: none;
+}
+
+.SearchResultSummary .Description {
+    margin-left: 0;
+}
+
+.RadGrid_MetroTouch .rgRow,
+.RadGrid_MetroTouch .rgAltRow,
+.RadGrid_MetroTouch .rgRow>td,
+.RadGrid_MetroTouch .rgAltRow>td {
+    background: #fff;
+    border: none !important;
+    padding: 1em 0 !important;
 }

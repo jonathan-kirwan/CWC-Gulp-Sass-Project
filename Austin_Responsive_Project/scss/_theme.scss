@@ -2,89 +2,88 @@
    ========================================================================== */
 
 // Larger Heros
-.row--hero {
-    background: url(images/banners/home-page-header.jpg) no-repeat center center / cover;
+[class*='row--hero'] {
     height: 65.86538461538461vh;
     max-height: 475px;
+}
+
+.row--border-bottom {
+    border-bottom: 1px solid $primary-color;
+}
+
+.row--hero {
+    background: url(images/banners/home-page-header.jpg) no-repeat center center / cover;
 }
 
 .row--hero-membership {
     background: url(images/banners/Membership-page-header.jpg) no-repeat center center / cover;
-    height: 65.86538461538461vh;
-    max-height: 475px;
 }
 
 .row--hero-civic-city {
     background: url(images/banners/Civic-City-header.jpg) no-repeat center center / cover;
-    height: 65.86538461538461vh;
-    max-height: 475px;
 }
 
 .row--hero-charity {
     background: url(images/banners/Charity-header.jpg) no-repeat center center / cover;
-    height: 65.86538461538461vh;
-    max-height: 475px;
 }
 
 .row--hero-events {
     background: url(images/banners/Events-page-header.jpg) no-repeat center center / cover;
-    min-height: 20em;
-    height: 65.86538461538461vh;
-    max-height: 475px;
 }
 
 .row--hero-the-master {
     background: url(images/banners/The-Master-page-header.jpg) no-repeat center center / cover;
-    min-height: 20em;
-    height: 65.86538461538461vh;
-    max-height: 475px;
 }
 
 // Smaller Heros
+.row--banner {
+    padding: 1em 0;
+}
+
+@media(min-width: 768px) {
+    .row--banner {
+        padding: 2em 0;
+    }
+}
+
+.row--banner h2,
+.row--banner h3,
+.row--banner p {
+    color: #fff;
+}
+
 .row--member-search {
     background: url(images/banners/member-search-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
 }
 
 .row--governing-documents {
     background: url(images/banners/Membership-master-governing-documents-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
 }
 
 .row--the-masters-archive {
     background: url(images/banners/The-Master-masters-archive-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
 }
 
 .row--become-a-charity {
     background: url(images/banners/Charity-page-master-trustee-vacancies-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
+}
+
+.row--dates-of-events {
+    background: url(images/banners/Events-dates-of-events-and-meetings-banner.jpg) no-repeat center center / cover;
 }
 
 .row--legacies {
     background: url(images/banners/Charity-master-charity-governance-awards-banner.jpg) no-repeat center center / cover;
-    height: 36.82692307692307vh;
-    max-height: 265px;
-    position: relative;
 }
 
-.row--member-search>[class*='col'],
-.row--governing-documents>[class*='col'],
-.row--the-masters-archive>[class*='col'],
-.row--become-a-charity>[class*='col'] {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
+// .row--member-search>[class*='col'],
+// .row--governing-documents>[class*='col'],
+// .row--the-masters-archive>[class*='col'],
+// .row--become-a-charity>[class*='col'] {
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
 .row--member-search h2,
 .row--member-search p {
     color: #fff;

@@ -2367,7 +2367,7 @@ input[type="checkbox"]:focus {
 .SearchField,
 .SearchResultSummary .ListItemTitle a {
   display: block;
-  background-color: #badde8;
+  background-color: $secondary-color;
   padding: 8px 12px;
 }
 
@@ -2380,10 +2380,11 @@ input[type="checkbox"]:focus {
   text-decoration: none;
   color: $gray !important;
   margin: -4px -7px 0;
+  font-family: $pt-serif;
 }
 
 .SearchResultSummary .ListItemTitle a:hover {
-  background-color: $panel-selected-item;
+  background-color: $secondary-color-hover;
   text-decoration: underline;
 }
 
