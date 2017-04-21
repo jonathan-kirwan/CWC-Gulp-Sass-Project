@@ -7,13 +7,13 @@
 }
 
 // Primary Navigation
-.RadMenu.RadMenu_Austin .RadSiteMap,
-.RadMenu.RadMenu_Austin .RadSiteMap .rsmItem,
-.RadMenu.RadMenu_Austin .RadSiteMap .rsmTwoLevels .rsmItem {
+.RadMenu .RadSiteMap,
+.RadMenu .RadSiteMap .rsmItem,
+.RadMenu .RadSiteMap .rsmTwoLevels .rsmItem {
     font-size: 0.96em;
 }
 
-.rmItem:after {
+.rmRootLink:after {
     color: $primary-color;
     content: " | ";
     position: absolute;
@@ -22,7 +22,13 @@
     transform: translateY(-50%);
 }
 
-.rmItem:last-child:after {
+.rmRootLink:last-child:after {
+    content: "";
+}
+
+.RadMenu .rmRootLink.rmExpanded:after,
+.RadMenu .rmRootLink:hover:after,
+.RadMenu .rmRootLink:focus:after {
     content: "";
 }
 
