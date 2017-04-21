@@ -4,3 +4,27 @@
 .btn.MediumButton {
     min-width: 10em;
 }
+
+
+/* Content File / File Download Buttons */
+
+
+/* Set DisplayFile to hidden to hide text node label which displays the file type (e.g. Adobe PDF File) */
+
+.DisplayFile {
+    visibility: hidden;
+}
+
+
+/* Set 'a' element to visible to display the download button */
+
+.DisplayFile>a {
+    visibility: visible;
+}
+
+
+/* Set Display: none on line break to remove empty line space caused by hiding text node */
+
+.DisplayFile>br {
+    display: none;
+}

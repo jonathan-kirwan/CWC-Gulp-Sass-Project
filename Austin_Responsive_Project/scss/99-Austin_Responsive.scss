@@ -1928,6 +1928,9 @@ input[type="checkbox"]:focus {
   -o-transition: background 0.2s ease-out;
   transition: background 0.2s ease-out;
 }
+.DisplayFile > a {
+  @extend .btn
+}
 .btn:focus,
 .TextButton:focus,
 .TextButtonWithImage:focus,
@@ -1937,6 +1940,9 @@ input[type="checkbox"]:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+.DisplayFile > a:focus {
+  @extend .btn:focus
 }
 .btn:hover, .btn:focus, .btn:visited,
 .TextButton:hover,
@@ -1956,6 +1962,9 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a:visited {
   color: #fff;
   text-decoration: none;
+}
+.DisplayFile > a:hover, .DisplayFile > a:focus, .DisplayFile > a:visited {
+  @extend .btn:hover
 }
 .btn:active, .btn.active,
 .TextButton:active,
@@ -2012,6 +2021,9 @@ input[type="checkbox"]:focus {
   background-color: $secondary-color;
   border-color: transparent;
 }
+.DisplayFile > a {
+  @extend .btn
+}
 .btn:hover, .btn:focus, .btn:active, .btn:visited,
 .TextButton:hover,
 .TextButton:focus,
@@ -2037,6 +2049,9 @@ input[type="checkbox"]:focus {
   background-color: $secondary-color-hover;
   border-color: transparent;
 }
+.DisplayFile > a:hover, .DisplayFile > a:focus, .DisplayFile > a:active, .DisplayFile > a:visited {
+  @extend .btn:hover
+}
 .btn:active,
 .TextButton:active,
 .TextButtonWithImage:active,
@@ -2044,6 +2059,9 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a:active,
 .RadGrid input.TextButton:active {
   background-image: none;
+}
+.DisplayFile > a:active {
+  @extend .btn:active
 }
 .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled]:active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn:active, .btn.aspNetDisabled, .btn.aspNetDisabled:hover, .btn.aspNetDisabled:focus, .btn.aspNetDisabled:active,
 .TextButton[disabled],
@@ -2136,6 +2154,9 @@ input[type="checkbox"]:focus {
   background-color: $secondary-color;
   border-color: transparent;
 }
+.DisplayFile > a:active {
+  @extend .PrimaryButton
+}
 .PrimaryButton:hover, .PrimaryButton:focus, .PrimaryButton:active, .PrimaryButton:visited,
 .SaveAndClose:hover,
 .SaveAndClose:focus,
@@ -2164,6 +2185,9 @@ input[type="checkbox"]:focus {
   color: $primary-color;
   background-color: $secondary-color-hover;
   border-color: transparent;
+}
+.DisplayFile > a:hover, .DisplayFile > a:focus, .DisplayFile > a:active, .DisplayFile > a:visited {
+  @extend .PrimaryButton:hover
 }
 .PrimaryButton:active,
 .SaveAndClose:active,
@@ -2294,6 +2318,10 @@ input[type="checkbox"]:focus {
 .UseMediumButton .TextButtonWithImage {
   font-size: $large-body-text !important;
   padding: 10px 25px !important;
+}
+
+.DisplayFile > a {
+  @extend .MediumButton
 }
 
 .LargeButton,
