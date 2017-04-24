@@ -285,7 +285,7 @@ body {
 
 a {
   color: $link-color;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:visited {
   color: $link-visited-color;
@@ -705,10 +705,10 @@ img.ImgNoResize, .ImgNoResize img {
   color: $gray;
 }
 .footer-nav-copyright a, .footer-nav-copyright a:visited {
-  color: #fff;
+  /* color: #fff; */
 }
 .footer-nav-copyright a:hover, .footer-nav-copyright a:active {
-  color: white;
+  /* color: white; */
 }
 
 /* Compatibility Footer
