@@ -35,6 +35,10 @@
     background: url(images/banners/The-Master-page-header.jpg) no-repeat center center / cover;
 }
 
+.row--hero-news {
+    background: url(images/banners/News-page-header.jpg) no-repeat center center / cover;
+}
+
 // Smaller Heros
 .row--banner {
     padding: 1em 0;
@@ -76,18 +80,8 @@
     background: url(images/banners/Charity-master-charity-governance-awards-banner.jpg) no-repeat center center / cover;
 }
 
-// .row--member-search>[class*='col'],
-// .row--governing-documents>[class*='col'],
-// .row--the-masters-archive>[class*='col'],
-// .row--become-a-charity>[class*='col'] {
-//     position: absolute;
-//     top: 50%;
-//     transform: translateY(-50%);
-// }
-.row--member-search h2,
-.row--member-search p {
-    color: #fff;
-    margin: 0 8px 8px 8px;
+.row--monthly-newsletter {
+    background: url(images/banners/News-page-master-e-clothworker-banner.jpg) no-repeat center center / cover;
 }
 
 // Font Icons
