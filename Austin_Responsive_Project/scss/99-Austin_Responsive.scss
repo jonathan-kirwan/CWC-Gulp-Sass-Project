@@ -286,6 +286,7 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
+  transition: color 0.1ms ease;
 }
 a:visited {
   color: $link-visited-color;
@@ -1013,7 +1014,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu_Austin .rmSlide .rsmSelected > .rsmLink,
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem.rsmSelected > .rsmLink {
   background-color: transparent;
-  color: #f3691c;
+  color: $primary-color-hover;
 }
 .RadMenu_Austin .rmSlide .rmLink:hover, .RadMenu_Austin .rmSlide .rmLink:focus,
 .RadMenu_Austin .rmSlide .rsmLink:hover,
@@ -1021,7 +1022,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:hover,
 .RadMenu_Austin .rmSlide .rsmTwoLevels > .rsmItem > .rsmLink:focus {
   background-color: transparent;
-  color: #f3691c;
+  color: $primary-color-hover;
 }
 .RadMenu_Austin .rmSlide.rmLevel1 .rmGroup {
   /* for second-level sub-nav and beyond,
