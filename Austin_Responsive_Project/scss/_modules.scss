@@ -107,8 +107,28 @@
     padding: 1em 0 !important;
 }
 
-// Dates
+// News Articles
+.row--article-wide-image {
+    background: transparent;
+}
+
+// Tagged List Items
+.row--tagged-list-item {
+    background: transparent;
+}
+
+.row--tagged-list-item .ContentHtml:not(:first-of-type) {
+    display: none;
+}
+
+.row--tagged-list-item .ContentHtml:first-of-type img {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(20% 0, 80% 0, 80% 100%, 20% 100%);
+}
+
+// Date is largely used with News Articles but can be deployed anywhere
 .Date {
     color: $primary-color;
+    font-family: $pt-serif;
     font-weight: $font-weight-bolder;
 }

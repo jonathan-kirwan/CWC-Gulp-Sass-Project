@@ -28,3 +28,17 @@
 .DisplayFile>br {
     display: none;
 }
+
+
+/* Full Width / View All Style Button */
+
+.btn__view-all {
+    background: $footer-bg;
+    display: block;
+    margin-left: 0;
+}
+
+.btn__view-all:focus,
+.btn__view-all:hover {
+    background: lighten($footer-bg, 6%);
+}
