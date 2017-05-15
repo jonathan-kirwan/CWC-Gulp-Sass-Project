@@ -42,3 +42,13 @@
 .btn__view-all:hover {
     background: lighten($footer-bg, 6%);
 }
+
+// Scroll To Top Link
+.link__scroll-to-top {
+    color: $primary-color;
+}
+
+.link__scroll-to-top:focus,
+.link__scroll-to-top:hover {
+    color: $primary-color-hover;
+}
