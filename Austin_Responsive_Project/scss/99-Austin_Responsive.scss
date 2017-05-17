@@ -370,11 +370,11 @@ h4, .SectionLabel, h5 {
 }
 
 h4, .h4, .SectionLabel {
-  color: $section-label-color;
+  color: $primary-color;
 }
 
 h5, .h5 {
-  color: $section-label-color;
+  color: $primary-color;
 }
 
 h6, .h6 {
@@ -2566,6 +2566,7 @@ input[type="checkbox"]:focus {
 .RadTabStrip_Metro .rtsLevel1 .rtsUL .rtsLink {
   text-transform: none;
   border-color: $rad-control-color;
+  color: $gray;
 }
 .RadTabStripTop_Metro .rtsLevel1 .rtsSelected, .RadTabStripTop_Metro .rtsLevel1 .rtsLink:hover, .RadTabStripTop_Metro .rtsLevel1 .rtsUL .rtsSelected, .RadTabStripTop_Metro .rtsLevel1 .rtsUL .rtsLink:hover,
 .RadTabStrip_Metro .rtsLevel1 .rtsSelected,

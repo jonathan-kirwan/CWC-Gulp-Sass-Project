@@ -22,13 +22,13 @@
     transform: translateY(-50%);
 }
 
-.rmRootLink:last-child:after {
+.rmItem.rmLast .rmRootLink:last-child:after {
     content: "";
 }
 
-.RadMenu .rmRootLink.rmExpanded:after,
-.RadMenu .rmRootLink:hover:after,
-.RadMenu .rmRootLink:focus:after {
+.rmItem.rmLast .RadMenu .rmRootLink.rmExpanded:after,
+.rmItem.rmLast .RadMenu .rmRootLink:hover:after,
+.rmItem.rmLast .RadMenu .rmRootLink:focus:after {
     content: "";
 }
 
