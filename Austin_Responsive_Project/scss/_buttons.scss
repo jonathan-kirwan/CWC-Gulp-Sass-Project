@@ -44,11 +44,28 @@
 }
 
 // Scroll To Top Link
-.link__scroll-to-top {
-    color: $primary-color;
+a.link__scroll-to-top {
+    color: $primary-color !important;
+    &focus,
+    &hover {
+        color: $primary-color-hover;
+    }
 }
 
-.link__scroll-to-top:focus,
-.link__scroll-to-top:hover {
-    color: $primary-color-hover;
+// Animate Scroll To Top Link 
+.link__scroll-to-top em:first-child {
+    animation-delay: .5s !important;
+}
+
+.link__scroll-to-top .fa-chevron-up {
+    animation: fade .5s ease-in-out infinite alternate;
+}
+
+@keyframes fade {
+    0% {
+        opacity: .3
+    }
+    to {
+        opacity: 1
+    }
 }
