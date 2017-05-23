@@ -27,15 +27,13 @@ jQuery(window).scroll(function () {
     }
 })
 
-// Images
+// Change image for -1x when used in tagged lists
 
 // 'use strict';
 
-'use strict';
-
 var imgs = jQuery('.row--tagged-list-item img');
 
-if (!jQuery(imgs).length) {
+if (jQuery(imgs).length) {
     for (i = 0; i < imgs.length; i++) {
         var src = imgs[i].src;
         var newSrc = src.replace(/-2x/g, '-1x');
