@@ -60,6 +60,13 @@
     }
 }
 
+// Reduce Padding of Panel Body in Row Card Style Containers
+
+.row-card .panel-body,
+.row-card .PanelBody {
+    padding: 0;
+}
+
 // Reduce Padding of Headers in Card Style Containers
 
 .WebPartZone--heading-zone .ContentItemContainer {

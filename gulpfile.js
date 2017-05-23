@@ -52,6 +52,11 @@ gulp.task('templates', function () {
         .pipe(gulp.dest('./Austin_Responsive/templates'))
 });
 
+gulp.task('js', function () {
+    return gulp.src('./Austin_Responsive_Project/js/**/*.js')
+        .pipe(gulp.dest('./Austin_Responsive/js'))
+});
+
 gulp.task('watch', function () {
-    gulp.watch('./Austin_Responsive_Project/scss/**/*.scss', ['sass','sass-font-awesome']);
+    gulp.watch('./Austin_Responsive_Project/scss/**/*.scss', ['sass', 'sass-font-awesome', 'js']);
 })
