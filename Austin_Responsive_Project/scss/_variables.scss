@@ -31,9 +31,9 @@ $gray-lightened : #999999;
 
 $gray-bg: #f4f5ed;
 
-$link-color: #23749d;
-$link-hover-color: #1a5573;
-$link-visited-color: #2883b2;
+$link-color: #002b4f;
+$link-hover-color: lighten($link-color, 20%);
+$link-visited-color: lighten($link-color, 10%);
 
 $helper-text-color: #0064cd;
 

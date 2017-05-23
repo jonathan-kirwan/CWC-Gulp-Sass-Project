@@ -20,6 +20,7 @@
     right: 0;
     top: calc(50% - 5px);
     transform: translateY(-50%);
+    z-index: -1;
 }
 
 .rmItem.rmLast .rmRootLink:after {
@@ -104,7 +105,7 @@
 .RadGrid_MetroTouch .rgAltRow>td {
     background: #fff;
     border: none !important;
-    padding: 1em 0 !important;
+    padding: 0.8em 0.6em !important;
 }
 
 // News Articles
