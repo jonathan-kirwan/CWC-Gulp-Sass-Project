@@ -57,7 +57,7 @@ a.link__scroll-to-top {
         transform: translateY(-4px);
     } // Animate Scroll To Top Link 
     em:first-child {
-        animation-delay: 2s !important;
+        animation-delay: 0.8s !important;
     }
     >br {
         content: " ";
@@ -65,7 +65,7 @@ a.link__scroll-to-top {
         margin-top: -16px;
     }
     .fa-chevron-up {
-        animation: fade 4s ease-in-out infinite alternate;
+        animation: fade 1.4s ease-in-out infinite alternate;
     }
 }
 
