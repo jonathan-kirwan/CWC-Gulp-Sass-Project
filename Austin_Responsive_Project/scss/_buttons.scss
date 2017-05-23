@@ -45,20 +45,28 @@
 
 // Scroll To Top Link
 a.link__scroll-to-top {
+    bottom: calc(0% - -10px);
     color: $primary-color !important;
-    &focus,
-    &hover {
+    display: block;
+    position: fixed;
+    right: calc(0% - -10px);
+    transition: transform 0.5s ease;
+    &:focus,
+    &:hover {
         color: $primary-color-hover;
+        transform: translateY(-4px);
+    } // Animate Scroll To Top Link 
+    em:first-child {
+        animation-delay: .1.5s !important;
     }
-}
-
-// Animate Scroll To Top Link 
-.link__scroll-to-top em:first-child {
-    animation-delay: .5s !important;
-}
-
-.link__scroll-to-top .fa-chevron-up {
-    animation: fade .5s ease-in-out infinite alternate;
+    >br {
+        content: " ";
+        display: block;
+        margin-top: -24px;
+    }
+    .fa-chevron-up {
+        animation: fade .5s ease-in-out infinite alternate;
+    }
 }
 
 @keyframes fade {
