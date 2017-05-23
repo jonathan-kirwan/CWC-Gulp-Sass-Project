@@ -286,7 +286,7 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
-  transition: color 0.1ms ease;
+  transition: all 0.1ms ease;
 }
 a:visited {
   color: $link-visited-color;
@@ -300,7 +300,7 @@ a.aspNetDisabled, a.aspNetDisabled:hover, a.aspNetDisabled:focus, a.aspNetDisabl
 
 .RadGrid a, .RadToolTip a {
   color: $link-color  !important;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .RadGrid a:visited, .RadToolTip a:visited {
   color: $link-visited-color  !important;
@@ -840,7 +840,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmText,
 .RadMenu.RadMenu_Austin .rmHorizontal .rmText,
 .RadMenu.RadMenu_Austin .rmSlide .rmText {
-  padding: 10px 25px 20px 15px;
+  padding: 10px 25px 20px 25px;
 }
 .RadMenu.RadMenu_Austin .rmSlide .MegaDropDownMenuOuter > .rmText {
   /* when mega menus are on, don't add padding around the rmText */

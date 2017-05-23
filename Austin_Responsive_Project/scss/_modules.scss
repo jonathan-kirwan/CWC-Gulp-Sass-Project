@@ -108,6 +108,17 @@
     padding: 0.8em 0.6em !important;
 }
 
+// Rad Wizard Display
+.ContentWizardDisplay {
+    border-color: $gray-bg;
+}
+
+// Alerts
+.Alerts .AlertItem {
+    border: 1px solid #fff;
+    background-color: $gray-bg;
+}
+
 // News Articles
 .row--article-wide-image {
     background: transparent;
