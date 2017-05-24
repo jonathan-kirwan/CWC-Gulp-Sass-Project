@@ -27,6 +27,26 @@ jQuery(window).scroll(function () {
     }
 })
 
+// Anchor Menu Fade In / Fade Out Animation
+
+var links = [];
+links = document.querySelectorAll('.row--anchor-menu ul li');
+
+if (links.length !== 0) {
+
+	for (var i = 0; i < links.length; i++) {
+		links[i].addEventListener('mouseenter', hover, false);
+	};
+}
+
+function hover() {
+	var thisss = this;
+	links.forEach(function (item) {
+		item.setAttribute('class', 'fade-out');
+		thisss.setAttribute('class', 'fade-in');
+	});
+}
+
 // Change image for -1x when used in tagged lists
 
 // 'use strict';

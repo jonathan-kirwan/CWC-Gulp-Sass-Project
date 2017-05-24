@@ -61,6 +61,15 @@
     display: inline-flex;
     padding: 5px 20px 5px 10px;
     position: relative;
+    opacity: 0.9;
+}
+
+.row--anchor-menu li.fade-out {
+    opacity: 0.4;
+}
+
+.row--anchor-menu li.fade-in {
+    opacity: 1;
 }
 
 .row--anchor-menu li a {
