@@ -43,11 +43,28 @@
     background: lighten($footer-bg, 6%);
 }
 
+// Scroll To Bottom Link
+.fa-chevron-down:hover {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(8px);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
 // Scroll To Top Link
 a.link__scroll-to-top {
     bottom: calc(0% - -10px);
     color: $primary-color !important;
-    display: block;
     position: fixed;
     right: calc(0% - -10px);
     transition: transform 0.5s ease;

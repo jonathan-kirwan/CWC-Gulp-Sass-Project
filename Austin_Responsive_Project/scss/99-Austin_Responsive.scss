@@ -286,7 +286,7 @@ body {
 a {
   color: $link-color;
   text-decoration: none;
-  transition: all 0.1ms ease;
+  transition: background 0.4s cubic-bezier(0, 0, 0.2, 1), color 0.2s ease-in-out;
 }
 a:visited {
   color: $link-visited-color;
@@ -549,6 +549,7 @@ img.ImgNoResize, .ImgNoResize img {
    Footer
    ========================================================================== */
 .footer-nav-copyright {
+  display: none;
   padding-top: 1em;
   padding-bottom: 0.35em;
   /* 1em - .65em (bottom margin on nav lis) */
