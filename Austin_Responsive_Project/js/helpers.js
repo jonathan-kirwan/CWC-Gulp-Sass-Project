@@ -15,10 +15,12 @@
 
 jQuery(document).ready(function () {
     const anchor = window.location.href;
-    const pos = getAnchor.search(/#\//);
-    const newAnchor = getAnchor.slice(pos).split('/').join('');
-    const el = document.querySelector(newAnchor);
-    el.scrollIntoView();
+    const pos = anchor.search(/#\//);
+    if (pos != -1) {
+        const newAnchor = anchor.slice(pos).split('/').join('');
+        const el = document.querySelector(newAnchor);
+        el.scrollIntoView();
+    }
 });
 
 // Show / Hide scroll to top of page link
