@@ -13,6 +13,14 @@
 
 // window.onload = scrollToAnchor();
 
+jQuery(document).ready(function () {
+    const anchor = window.location.href;
+    const pos = getAnchor.search(/#\//);
+    const newAnchor = getAnchor.slice(pos).split('/').join('');
+    const el = document.querySelector(newAnchor);
+    el.scrollIntoView();
+});
+
 // Show / Hide scroll to top of page link
 
 const topLink = jQuery('.link__scroll-to-top');
@@ -34,17 +42,17 @@ links = document.querySelectorAll('.row--anchor-menu ul li');
 
 if (links.length !== 0) {
 
-	for (var i = 0; i < links.length; i++) {
-		links[i].addEventListener('mouseenter', hover, false);
-	};
+    for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('mouseenter', hover, false);
+    };
 }
 
 function hover() {
-	var thisss = this;
-	links.forEach(function (item) {
-		item.setAttribute('class', 'fade-out');
-		thisss.setAttribute('class', 'fade-in');
-	});
+    var thisss = this;
+    links.forEach(function (item) {
+        item.setAttribute('class', 'fade-out');
+        thisss.setAttribute('class', 'fade-in');
+    });
 }
 
 // Change image for -1x when used in tagged lists

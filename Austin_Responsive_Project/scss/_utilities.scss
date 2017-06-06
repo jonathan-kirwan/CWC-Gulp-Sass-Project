@@ -12,3 +12,12 @@
 .text-uppercase {
     text-transform: uppercase;
 }
+
+/* Remove Margin */
+
+// Reduce margin-bottom: 0.9em from ContentItemContainer
+
+.WebPartZone--heading-zone .ContentItemContainer,
+.ContentItemContainer--remove-margin .ContentItemContainer {
+    margin-bottom: 0;
+}
