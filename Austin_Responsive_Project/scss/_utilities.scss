@@ -21,3 +21,22 @@
 .ContentItemContainer--remove-margin .ContentItemContainer {
     margin-bottom: 0;
 }
+
+// Hide Column Header in IQA
+.RadGrid--remove-column-header .rgHeader {
+    display: none;
+}
+
+// Remove Borders
+// Use RadGrid--remove-border
+.RadGrid--remove-border {
+    border-color: transparent;
+}
+
+// IQA Unordered List
+.RadGrid--IQA-unordered-list .rgRow,
+.RadGrid--IQA-unordered-list .rgAltRow,
+.RadGrid--IQA-unordered-list .rgRow>td,
+.RadGrid--IQA-unordered-list .rgAltRow>td {
+    padding: 0 !important;
+}
