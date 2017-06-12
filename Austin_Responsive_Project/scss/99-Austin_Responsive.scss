@@ -2019,7 +2019,6 @@ input[type="checkbox"]:focus {
 .ruButton,
 #masterHeaderActionArea a,
 .RadGrid input.TextButton {
-  color: #ae9c4d;
   background-color: $secondary-color;
   border-color: transparent;
 }
@@ -2047,7 +2046,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.TextButton:focus,
 .RadGrid input.TextButton:active,
 .RadGrid input.TextButton:visited {
-  color: #fff;
+  color: $primary-color;
   background-color: $secondary-color-hover;
   border-color: transparent;
 }
