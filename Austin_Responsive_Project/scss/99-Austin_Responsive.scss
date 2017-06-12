@@ -2184,7 +2184,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.PrimaryButton:focus,
 .RadGrid input.PrimaryButton:active,
 .RadGrid input.PrimaryButton:visited {
-  color: $primary-color;
+  color: $primary-color !important;
   background-color: $secondary-color-hover;
   border-color: transparent;
 }
