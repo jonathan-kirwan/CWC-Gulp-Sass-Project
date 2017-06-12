@@ -1962,7 +1962,7 @@ input[type="checkbox"]:focus {
 #masterHeaderActionArea a:hover,
 #masterHeaderActionArea a:focus,
 #masterHeaderActionArea a:visited {
-  color: #fff;
+  color: $primary-color;
   text-decoration: none;
 }
 .DisplayFile > a:hover, .DisplayFile > a:focus, .DisplayFile > a:visited {

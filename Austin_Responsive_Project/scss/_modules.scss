@@ -129,6 +129,14 @@
     background-color: $gray-bg;
 }
 
+// My Account
+// Hide Address Preferences and Email Address field from 'My Address Details'
+[id*='ulPreferences'],
+[id*='AddressEntry'] tbody>tr:last-child,
+[id*='AddressEdit_RightCell'] {
+    display: none;
+}
+
 // News Articles
 .row--article-wide-image {
     background: transparent;
