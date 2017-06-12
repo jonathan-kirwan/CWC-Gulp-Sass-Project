@@ -2681,7 +2681,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro .rgPager .rgPagerButton {
   background-color: $rad-control-color;
   border-color: $rad-control-color;
-  color: #fff !important;
+  color: $primary-color !important;
 }
 .RadGrid.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell,
 .RadGrid.RadGrid_MetroTouch .rgSelectedRow,
@@ -2694,7 +2694,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro .rgSelectedRow td.rgSorted,
 .RadGrid.RadGrid_Metro th.rgSorted {
   background-color: $rad-control-color;
-  border-color: $rad-control-color;
+  // border-color: $rad-control-color;
 }
 .RadGrid.RadGrid_MetroTouch .rgMasterTable .rgSelectedCell a,
 .RadGrid.RadGrid_MetroTouch .rgSelectedRow a,
@@ -2706,7 +2706,7 @@ html .RadTabStrip.RadTabStrip_MetroTouch .rtsLevel1 .rtsSelected, html .RadTabSt
 .RadGrid.RadGrid_Metro td.rgEditRow .rgSelectedRow a,
 .RadGrid.RadGrid_Metro .rgSelectedRow td.rgSorted a,
 .RadGrid.RadGrid_Metro th.rgSorted a {
-  color: #fff !important;
+  color: $primary-color !important;
 }
 .RadGrid.RadGrid_MetroTouch .rgGroupPanel, .RadGrid.RadGrid_MetroTouch .rgGroupPanel caption,
 .RadGrid.RadGrid_Metro .rgGroupPanel,
