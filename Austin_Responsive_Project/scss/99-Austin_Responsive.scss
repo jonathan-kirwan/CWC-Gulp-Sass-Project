@@ -2021,6 +2021,7 @@ input[type="checkbox"]:focus {
 .RadGrid input.TextButton {
   background-color: $secondary-color;
   border-color: transparent;
+  color: $primary-color;
 }
 .DisplayFile > a {
   @extend .btn
