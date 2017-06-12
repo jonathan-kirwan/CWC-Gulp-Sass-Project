@@ -15,11 +15,44 @@
 
 jQuery(document).ready(function () {
     const anchor = window.location.href;
-    const pos = getAnchor.search(/#\//);
-    const newAnchor = getAnchor.slice(pos).split('/').join('');
-    const el = document.querySelector(newAnchor);
-    el.scrollIntoView();
+    const pos = anchor.search(/#\//);
+    if (pos != -1) {
+        const newAnchor = anchor.slice(pos).split('/').join('');
+        const el = document.querySelector(newAnchor);
+        el.scrollIntoView();
+    }
 });
+
+/// WORK IN PROGRESS on ANCHORS
+///
+///
+///
+
+// function scrollAnchor() {
+//     const newAnchor = anchor.slice(pos).split('/').join('');
+//     const el = document.querySelector(newAnchor);
+//     el.scrollIntoView();
+// }
+
+// jQuery(document).ready(function () {
+//     const anchor = window.location.href;
+//     const pos = anchor.search(/#\//);
+//     if (pos != -1) {
+//         scrollAnchor();
+//     }
+// });
+
+// var secondaryMenuLinks = document.getElementsByClassName('rsmLink');
+// console.log(secondaryMenuLinks);
+
+// for (i = 0; i < secondaryMenuLinks.length; i++) {
+//     console.log(secondaryMenuLinks[i].addEventListener("click", scrollAnchor, false));
+// }
+
+///
+///
+///
+///
 
 // Show / Hide scroll to top of page link
 

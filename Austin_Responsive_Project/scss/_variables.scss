@@ -14,10 +14,10 @@ $pt-serif: 'PT Serif', serif;
 
 // Used for h1, .h1, .PageTitle and .PrimaryButton, .SaveAndClose, .SaveAs, .UsePrimaryButton .TextButton, .UsePrimaryButton .TextButtonWithImage, #masterHeaderActionArea a, .RadGrid input.PrimaryButton
 $primary-color: #ae9c4d;
-$primary-color-hover: lighten($primary-color, 10%);
+$primary-color-hover: darken($primary-color, 10%);
 // Used for .btn, .TextButton, .TextButtonWithImage, .ruButton, #masterHeaderActionArea a, .RadGrid input.TextButton
 $secondary-color: #eae7dc;
-$secondary-color-hover: lighten($secondary-color, 6%);
+$secondary-color-hover: darken($secondary-color, 6%);
 $rad-control-color: #f4f5ed;
 $progress-color: #ffdd6f;
 $progress-bar: #db9770;
@@ -52,8 +52,8 @@ $font-family-stack: $open-sans;
 $font-family-heading-stack: $pt-serif;
 
 $body-font-size-sm: 15px;
-$body-font-size: 17px;
-$body-font-size-lg: 19px;
+$body-font-size: 16px;
+$body-font-size-lg: 17px;
 
 $body-line-height: 1.6;
 
