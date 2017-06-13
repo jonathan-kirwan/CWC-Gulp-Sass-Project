@@ -23,13 +23,13 @@
 }
 
 // Hide Column Header in IQA
-.RadGrid--remove-column-header .rgHeader {
+.RadGrid--hide-column-header .rgHeader {
     display: none;
 }
 
 // Remove Borders
 // Use RadGrid--remove-border
-.RadGrid--remove-border .RadGrid {
+.RadGrid--hide-border .RadGrid {
     border-color: transparent;
 }
 
