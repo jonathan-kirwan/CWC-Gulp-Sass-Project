@@ -40,3 +40,8 @@
 .RadGrid--IQA-unordered-list .rgAltRow>td {
     padding: 0.1em 0 !important;
 }
+
+// Sometimes IQA Height is Auto Calculated by iMIS. This Style Will Apply Auto Height
+.RadGrid--auto-height {
+    height: auto !important;
+}
