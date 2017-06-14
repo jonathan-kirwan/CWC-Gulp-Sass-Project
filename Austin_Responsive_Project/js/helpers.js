@@ -1,3 +1,5 @@
+'use strict';
+
 // Fix issue with anchor links not working due to AngularJS routing (ngRoute module)
 
 jQuery(document).ready(function () {
@@ -39,9 +41,9 @@ for (var i = 0; i < primaryMenuLinks.length; i++) {
 
 // Show / Hide scroll to top of page link
 
-const topLink = jQuery('.link__scroll-to-top');
-const windowHeight = jQuery(window).height();
-const scrollTop = jQuery(window).scrollTop();
+var topLink = jQuery('.link__scroll-to-top');
+var windowHeight = jQuery(window).height();
+var scrollTop = jQuery(window).scrollTop();
 
 jQuery(window).scroll(function () {
     if (jQuery(this).scrollTop() >= windowHeight) {
