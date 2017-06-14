@@ -1,18 +1,5 @@
 // Fix issue with anchor links not working due to AngularJS routing (ngRoute module)
 
-// const a = window.location.href.indexOf('scroll=');
-// const b = window.location.href.indexOf('&hkey=');
-// const href = window.location.href.substring(a + 7, b)
-
-// function scrollToAnchor() {
-//     if (a != -1 && b != -1) {
-//         const anchor = document.querySelector(`#${href}`);
-//         anchor.scrollIntoView();
-//     }
-// };
-
-// window.onload = scrollToAnchor();
-
 jQuery(document).ready(function () {
     const anchor = window.location.href;
     const pos = anchor.search(/#\//);
@@ -23,36 +10,27 @@ jQuery(document).ready(function () {
     }
 });
 
-/// WORK IN PROGRESS on ANCHORS
-///
-///
-///
+/// This is a secondary script to handle broken links in main menu (problem is that they do not 
+/// seem to fire after the first function above has activated)
+/// Will need to return this and rewrite it in a more efficient way
 
-// function scrollAnchor() {
-//     const newAnchor = anchor.slice(pos).split('/').join('');
-//     const el = document.querySelector(newAnchor);
-//     el.scrollIntoView();
-// }
+var allmylinks = document.querySelectorAll('.rsmColumnWrap .rsmList > .rsmItem > .rsmLink');
+//allmylinks;
+for (let i = 0; i < allmylinks.length; i++) {
 
-// jQuery(document).ready(function () {
-//     const anchor = window.location.href;
-//     const pos = anchor.search(/#\//);
-//     if (pos != -1) {
-//         scrollAnchor();
-//     }
-// });
-
-// var secondaryMenuLinks = document.getElementsByClassName('rsmLink');
-// console.log(secondaryMenuLinks);
-
-// for (i = 0; i < secondaryMenuLinks.length; i++) {
-//     console.log(secondaryMenuLinks[i].addEventListener("click", scrollAnchor, false));
-// }
-
-///
-///
-///
-///
+    allmylinks[i].addEventListener("click", function clickey() {
+        //console.log( "clicked" );
+        const anchor1 = allmylinks[i].href;
+        const pos1 = anchor1.search(/#\//);
+        if (pos1 != -1) {
+            const newAnchor1 = anchor1.slice(pos1)
+                .split('/')
+                .join('');
+            const el1 = document.querySelector(newAnchor1);
+            el1.scrollIntoView();
+        }
+    }, false);
+}
 
 // Show / Hide scroll to top of page link
 
