@@ -1,5 +1,3 @@
-'use strict';
-
 // Fix issue with anchor links not working due to AngularJS routing (ngRoute module)
 
 jQuery(document).ready(function () {
@@ -51,7 +49,7 @@ jQuery(window).scroll(function () {
     } else {
         topLink.fadeOut();
     }
-})
+});
 
 // Anchor Menu Fade In / Fade Out Animation
 
@@ -74,8 +72,6 @@ function hover() {
 }
 
 // Change image for -1x when used in tagged lists
-
-// 'use strict';
 
 var imgs = jQuery('.row--tagged-list-item img');
 
