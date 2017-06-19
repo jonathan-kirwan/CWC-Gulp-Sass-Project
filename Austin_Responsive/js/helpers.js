@@ -1,11 +1,13 @@
+'use strict';
+
 // Fix issue with anchor links not working due to AngularJS routing (ngRoute module)
 
 jQuery(document).ready(function () {
-    const anchor = window.location.href;
-    const pos = anchor.search(/#\//);
+    var anchor = window.location.href;
+    var pos = anchor.search(/#\//);
     if (pos != -1) {
-        const newAnchor = anchor.slice(pos).split('/').join('');
-        const el = document.querySelector(newAnchor);
+        var newAnchor = anchor.slice(pos).split('/').join('');
+        var el = document.querySelector(newAnchor);
         el.scrollIntoView();
     }
 });
@@ -14,29 +16,34 @@ jQuery(document).ready(function () {
 /// seem to fire after the first function above has activated)
 /// Will need to return this and rewrite it in a more efficient way
 
-var allmylinks = document.querySelectorAll('.rsmColumnWrap .rsmList > .rsmItem > .rsmLink');
+var primaryMenuLinks = document.querySelectorAll('.rsmColumnWrap .rsmList > .rsmItem > .rsmLink');
 //allmylinks;
-for (let i = 0; i < allmylinks.length; i++) {
 
-    allmylinks[i].addEventListener("click", function clickey() {
+var _loop = function _loop(i) {
+
+    primaryMenuLinks[i].addEventListener("click", function primaryMenuLinkClick() {
         //console.log( "clicked" );
-        const anchor1 = allmylinks[i].href;
-        const pos1 = anchor1.search(/#\//);
+        var anchor1 = primaryMenuLinks[i].href;
+        var pos1 = anchor1.search(/#\//);
         if (pos1 != -1) {
-            const newAnchor1 = anchor1.slice(pos1)
-                .split('/')
-                .join('');
-            const el1 = document.querySelector(newAnchor1);
-            el1.scrollIntoView();
+            var newAnchor1 = anchor1.slice(pos1).split('/').join('');
+            var el1 = document.querySelector(newAnchor1);
+            if (el1 != null) {
+                el1.scrollIntoView();
+            }
         }
     }, false);
+};
+
+for (var i = 0; i < primaryMenuLinks.length; i++) {
+    _loop(i);
 }
 
 // Show / Hide scroll to top of page link
 
-const topLink = jQuery('.link__scroll-to-top');
-const windowHeight = jQuery(window).height();
-const scrollTop = jQuery(window).scrollTop();
+var topLink = jQuery('.link__scroll-to-top');
+var windowHeight = jQuery(window).height();
+var scrollTop = jQuery(window).scrollTop();
 
 jQuery(window).scroll(function () {
     if (jQuery(this).scrollTop() >= windowHeight) {
@@ -44,7 +51,7 @@ jQuery(window).scroll(function () {
     } else {
         topLink.fadeOut();
     }
-})
+});
 
 // Anchor Menu Fade In / Fade Out Animation
 
@@ -67,8 +74,6 @@ function hover() {
 }
 
 // Change image for -1x when used in tagged lists
-
-// 'use strict';
 
 var imgs = jQuery('.row--tagged-list-item img');
 
