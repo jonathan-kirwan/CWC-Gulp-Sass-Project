@@ -30,6 +30,18 @@
 }
 
 
+/* Custom Find Button */
+
+[id*='MemberSearchIQA'].TextButton {
+    background: darken($primary-color, 10%);
+}
+
+[id*='MemberSearchIQA'].TextButton:hover,
+[id*='MemberSearchIQA'].TextButton:visited {
+    background: darken($primary-color, 20%);
+}
+
+
 /* Full Width / View All Style Button */
 
 .btn__view-all {

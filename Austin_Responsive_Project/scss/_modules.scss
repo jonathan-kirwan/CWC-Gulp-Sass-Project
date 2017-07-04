@@ -156,7 +156,8 @@
 // Hide Address Preferences and Email Address field from 'My Address Details'
 [id*='ulPreferences'],
 [id*='AddressEntry'] tbody>tr:last-child,
-[id*='AddressEdit_RightCell'] {
+[id*='AddressEdit_RightCell'],
+[id*='CWCProfileContactAddressEditorCommon'] .rtsUL>.rtsLast {
     display: none;
 }
 
