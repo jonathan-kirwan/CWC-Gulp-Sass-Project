@@ -33,12 +33,12 @@
 /* Custom Find Button */
 
 [id*='MemberSearchIQA'].TextButton {
-    background: darken($primary-color, 10%);
+    background: darken($secondary-color, 6%);
 }
 
 [id*='MemberSearchIQA'].TextButton:hover,
 [id*='MemberSearchIQA'].TextButton:visited {
-    background: darken($primary-color, 20%);
+    background: darken($secondary-color, 8%);
 }
 
 
