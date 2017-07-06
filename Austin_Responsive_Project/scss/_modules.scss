@@ -63,6 +63,7 @@
     padding: 5px 20px 5px 10px;
     position: relative;
     opacity: 0.9;
+    transition: opacity 200ms ease-out;
 }
 
 .row--anchor-menu li.fade-out {

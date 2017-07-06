@@ -55,23 +55,45 @@ jQuery(window).scroll(function () {
 
 // Anchor Menu Fade In / Fade Out Animation
 
-var links = [];
-links = document.querySelectorAll('.row--anchor-menu ul li');
+searchAnchors = document.querySelectorAll('.row--anchor-menu ul li');
 
-if (links.length !== 0) {
+searchAnchors.forEach(function (element) {
+    element.addEventListener('mouseover', function () {
+        for (let i = 0; i < searchAnchors.length; i++) {
+            searchAnchors[i].setAttribute('class', 'fade-out');;
+        }
+        element.setAttribute('class', 'fade-in');
+    }, false)
+}, this);
 
-    for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('mouseenter', hover, false);
-    };
-}
+searchAnchors.forEach(function (element) {
+    element.addEventListener('mouseout', function () {
+        // element.setAttribute('class', 'fade-out');
+        for (let i = 0; i < searchAnchors.length; i++) {
+            searchAnchors[i].setAttribute('class', '');;
+        }
+    }, false)
+}, this);
 
-function hover() {
-    var thisss = this;
-    links.forEach(function (item) {
-        item.setAttribute('class', 'fade-out');
-        thisss.setAttribute('class', 'fade-in');
-    });
-}
+// Anchor Menu Fade In / Fade Out Animation
+
+// var links = [];
+// links = document.querySelectorAll('.row--anchor-menu ul li');
+
+// if (links.length !== 0) {
+
+//     for (var i = 0; i < links.length; i++) {
+//         links[i].addEventListener('mouseenter', hover, false);
+//     };
+// }
+
+// function hover() {
+//     var thisss = this;
+//     links.forEach(function (item) {
+//         item.setAttribute('class', 'fade-out');
+//         thisss.setAttribute('class', 'fade-in');
+//     });
+// }
 
 // Change image for -1x when used in tagged lists
 
