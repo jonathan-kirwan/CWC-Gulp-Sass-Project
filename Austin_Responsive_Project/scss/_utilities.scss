@@ -13,10 +13,10 @@
     text-transform: uppercase;
 }
 
+
 /* Remove Margin */
 
 // Reduce margin-bottom: 0.9em from ContentItemContainer
-
 .WebPartZone--heading-zone .ContentItemContainer,
 .ContentItemContainer--remove-margin .ContentItemContainer {
     margin-bottom: 0;
@@ -44,4 +44,12 @@
 // Sometimes IQA Height is Auto Calculated by iMIS. This Style Will Apply Auto Height
 .RadGrid--auto-height {
     height: auto !important;
+}
+
+// DisplayFile (ContentFile) Button Alignment
+.btn-center .DisplayFile a {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 12em;
 }
