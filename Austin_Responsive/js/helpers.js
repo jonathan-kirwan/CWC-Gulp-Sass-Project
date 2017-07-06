@@ -55,7 +55,7 @@ jQuery(window).scroll(function () {
 
 // Anchor Menu Fade In / Fade Out Animation
 
-searchAnchors = document.querySelectorAll('.row--anchor-menu ul li');
+var searchAnchors = document.querySelectorAll('.row--anchor-menu ul li');
 
 searchAnchors.forEach(function (element) {
     element.addEventListener('mouseover', function () {
