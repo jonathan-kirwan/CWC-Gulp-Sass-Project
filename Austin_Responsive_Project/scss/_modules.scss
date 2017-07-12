@@ -162,6 +162,13 @@
     display: none;
 }
 
+// My Account
+// Display Small Label on Second Row
+[id*='MemberIndDetails'] .Label small {
+    color: rgba(51, 51, 51, 0.8);
+    display: block;
+}
+
 // News Articles
 .row--article-wide-image {
     background: transparent;

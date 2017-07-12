@@ -12,6 +12,12 @@ jQuery(document).ready(function () {
     }
 });
 
+// Wrap Text on Member Ind Details Page
+
+jQuery("[id*='MemberIndDetails'] .Label:contains('(c1000 word limit)')").html(function (_, html) {
+    return html.replace(/(\(c1000 word limit\))/g, '<small>$1</small>');
+});
+
 /// This is a secondary script to handle broken links in main menu (problem is that they do not 
 /// seem to fire after the first function above has activated)
 /// Will need to return this and rewrite it in a more efficient way
@@ -74,26 +80,6 @@ searchAnchors.forEach(function (element) {
         }
     }, false)
 }, this);
-
-// Anchor Menu Fade In / Fade Out Animation
-
-// var links = [];
-// links = document.querySelectorAll('.row--anchor-menu ul li');
-
-// if (links.length !== 0) {
-
-//     for (var i = 0; i < links.length; i++) {
-//         links[i].addEventListener('mouseenter', hover, false);
-//     };
-// }
-
-// function hover() {
-//     var thisss = this;
-//     links.forEach(function (item) {
-//         item.setAttribute('class', 'fade-out');
-//         thisss.setAttribute('class', 'fade-in');
-//     });
-// }
 
 // Change image for -1x when used in tagged lists
 
