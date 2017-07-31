@@ -23,6 +23,15 @@
 }
 
 
+/* Align DisplayFile buttons - used on Master's Archive page */
+
+.DisplayFile__align-center .DisplayFile>a {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+
 /* Set Display: none on line break to remove empty line space caused by hiding text node */
 
 .DisplayFile>br {
